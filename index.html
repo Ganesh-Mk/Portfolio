@@ -38,8 +38,8 @@
 
     .navbar{
         top: 0;
-        position: sticky;
-    }
+        position: sticky !important;
+    } 
     nav {
         display: flex;
         justify-content: space-between;
@@ -216,6 +216,7 @@
     /* =========================== Skill section ===========================  */
 
 
+    
     .skills {
         margin-top: 6rem;
         display: grid;
@@ -223,8 +224,12 @@
     }
 
     .skillHead {
-        font-size: 4rem;
         margin-bottom: 6rem;
+        font-family: montserrat;
+        font-size: 3.4rem;
+        color: #000000d4;
+        font-weight: bold;
+
     }
 
     .skillContainer {
@@ -281,19 +286,23 @@
 
 
     .skill img {
-        width: 10rem;
+        width: 9rem;
     }
 
     .js img {
-        width: 8.5rem;
+        width: 8rem;
+    }
+    .react img {
+        width: 7.5rem;
     }
 
     .nodeJs img {
-        width: 13rem;
+        width: 8rem;
     }
 
     .sql img {
-        width: 14.5rem;
+        width: 8rem;
+
     }
 
 
@@ -386,7 +395,7 @@
 
     .projects h1 {
         font-size: 3.4rem;
-        margin: 6rem 0;
+        margin: 10rem 0 6rem 0;
         color: #000000d4;
         font-family: montserrat;
     }
@@ -697,6 +706,10 @@
     }
 
     @media (max-width: 470px) {
+        .navbar{
+            top: 0;
+            position: sticky !important;
+        } 
         html {
             font-size: 35%;
         }
@@ -718,6 +731,16 @@
 
     /* ============== mobile view ============== */
     @media (max-width: 410px) {
+        .navbar{
+            top: 0;
+            position: sticky !important;
+        } 
+        nav {
+            padding: 3rem 2rem;
+        }
+        .navList a {
+            font-size: 2.8rem;
+        }
         .container {
             padding: 0 3rem;
         }
@@ -766,6 +789,10 @@
     }
 
     @media (max-width: 330px) {
+        .navbar{
+            top: 0;
+            position: sticky !important;
+        } 
         nav {
             padding: 3rem 2rem;
         }
@@ -801,17 +828,17 @@
         </div>
     </nav>
     <div class="container">
-        <section class="home" data-aos="fade-up">
-            <div class="name" data-aos="fade-up">
+        <section class="home">
+            <div class="name">
                 <h1>HI! &nbsp;I &nbsp;AM</h1>
                 <h1>GANESH &nbsp;MK</h1>
-                <button>WEB DEVELOPER</button>
+                <button onclick="changeText()">WEB DEVELOPER</button>
             </div>
             <div class="aboutContainer">
                 <div>
                     <div class="myImage"></div>
                 </div>
-                <div class="about" data-aos="fade-up">
+                <div class="about">
                     <div class="aboutInfo">
                         <h2>ABOUT &nbsp; ME</h2>
                         <p>"I enjoy working on creative and challenging projects that allow me to apply my technical
@@ -884,8 +911,8 @@
     <section class="projects" id="projects">
         <h1>Mini - Projects</h1>
         <div class="project tickTock">
-            <div class="image" data-aos="fade-right"></div>
-            <div class="projectInfo" data-aos="fade-left">
+            <div class="image" data-aos="fade-up"></div>
+            <div class="projectInfo" data-aos="fade-up">
                 <h3>Tick Tock Time</h3>
                 <p>This mini-Project has a features of digital clock display, along with a unique visual element where a
                     floating stroke indicates the "tick" and "tock" of the clock. The project is designed to be simple
@@ -894,8 +921,8 @@
             </div>
         </div>
         <div class="project tictactoe">
-            <div class="image" data-aos="fade-right"></div>
-            <div class="projectInfo" data-aos="fade-left">
+            <div class="image" data-aos="fade-up"></div>
+            <div class="projectInfo" data-aos="fade-up">
                 <h3>Tic Tac Toe</h3>
                 <p>This game that has features like turn indicator, reset button, and user-friendly interface. The turn
                     indicator shows which player's turn it is, while the reset button allows users to start a new game
@@ -904,8 +931,8 @@
             </div>
         </div>
         <div class="project todoList">
-            <div class="image" data-aos="fade-right"></div>
-            <div class="projectInfo" data-aos="fade-left">
+            <div class="image" data-aos="fade-up"></div>
+            <div class="projectInfo" data-aos="fade-up">
                 <h3>Todo List</h3>
                 <p>This project is functional tool that allows users to add and delete tasks as needed. The interface is
                     designed to be user-friendly and responsive, automatically adding a scrollbar if the list becomes
@@ -914,8 +941,8 @@
             </div>
         </div>
         <div class="project calculator ">
-            <div class="image" data-aos="fade-right"></div>
-            <div class="projectInfo" data-aos="fade-left">
+            <div class="image" data-aos="fade-up"></div>
+            <div class="projectInfo" data-aos="fade-up">
                 <h3>Calculator</h3>
                 <p>functional and visually appealing iPhone-style calculator. It includes standard mathematical
                     functions, as well as special features like "All Cancel," "Cancel," and a history of previous
@@ -957,6 +984,18 @@
         });
     </script>
     <script>
+        let changeAccess = 0;
+        function changeText(){
+            
+            if(changeAccess == 0){
+                document.querySelector('button').innerText = 'Not yet actually😅'
+                changeAccess = 1;
+            }
+            else{
+                document.querySelector('button').innerText = 'WEB DEVELOPER'
+                changeAccess = 0;
+            }
+        }
         let skillBoxs = document.querySelectorAll(".skill");
         skillBoxs.forEach((e) => {
             e.addEventListener("mouseleave", () => {
