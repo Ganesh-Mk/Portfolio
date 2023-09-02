@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="icon" href="icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@300&family=Secular+One&family=Tilt+Warp&display=swap"
         rel="stylesheet">
     <title>Ganesh-Mk Portfolio</title>
 </head>
 <style>
-
+    
     * {
         margin: 0;
         padding: 0;
@@ -414,6 +415,11 @@
         height: 32rem;
     }
 
+    .quiz .image {
+        background: url('quiz.jpg') no-repeat center/cover;
+        border-radius: 3rem;
+        box-shadow: 0.5rem 1rem 4rem -2.5rem black;
+    }
     .tickTock .image {
         background: url('tickTock.png') no-repeat center/cover;
         border-radius: 3rem;
@@ -818,7 +824,6 @@
         }
     }
 </style>
-
 <body id="home">
     <nav class="navbar">
         <a href="#contact" class="logo"></a>
@@ -911,6 +916,14 @@
     </div>
     <section class="projects" id="projects">
         <h1>Mini - Projects</h1>
+        <div class="project quiz">
+            <div class="image" data-aos="fade-up"></div>
+            <div class="projectInfo" data-aos="fade-up">
+                <h3>Quiz</h3>
+                <p>"Explore our quiz with a polished design. Correct answers are highlighted in refreshing green, and incorrect choices stand out in bold red. Stay engaged with straightforward questions and keep an eye on your score through a convenient score counter.". </p>
+                <a href="https://ganesh-mk.github.io/Quiz/" target="_blank">Visit</a>
+            </div>
+        </div>
         <div class="project tickTock">
             <div class="image" data-aos="fade-up"></div>
             <div class="projectInfo" data-aos="fade-up">
@@ -978,7 +991,7 @@
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>
         AOS.init({
             duration: 800
