@@ -1,0 +1,70 @@
+import React from "react";
+
+function Navbar({ activeSection, setActiveSection }) {
+  return (
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <button
+            className={
+              activeSection === "About" ? " navbar-link active" : "navbar-link"
+            }
+            onClick={() => setActiveSection("About")}
+          >
+            About
+          </button>
+        </li>
+
+        <li className="navbar-item">
+          <button
+            className={
+              activeSection === "Resume" ? " navbar-link active" : "navbar-link"
+            }
+            onClick={() => setActiveSection("Resume")}
+          >
+            Resume
+          </button>
+        </li>
+
+        <li className="navbar-item">
+          <button
+            className={
+              activeSection === "Portfolio"
+                ? " navbar-link active"
+                : "navbar-link"
+            }
+            onClick={() => setActiveSection("Portfolio")}
+          >
+            Portfolio
+          </button>
+        </li>
+
+        <li className="navbar-item">
+          <button
+            className={
+              activeSection === "Blog" ? " navbar-link active" : "navbar-link"
+            }
+            onClick={() => setActiveSection("Blog")}
+          >
+            Blog
+          </button>
+        </li>
+
+        <li className="navbar-item">
+          <button
+            className={
+              activeSection === "Contact"
+                ? " navbar-link active"
+                : "navbar-link"
+            }
+            onClick={() => setActiveSection("Contact")}
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
