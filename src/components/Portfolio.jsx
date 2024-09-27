@@ -1,7 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { images } from "../Images";
+import {
+  KeyboardArrowDown,
+  KeyboardArrowUp,
+  VisibilityOutlined,
+} from "@mui/icons-material";
+
+const categories = [
+  "All",
+  "Web Development",
+  "App Development",
+  "Console Applications",
+];
+const projects = [
+  {
+    title: "WEB",
+    category: "Web Development",
+    image: images.project1,
+    alt: "finance",
+  },
+  {
+    title: "App",
+    category: "App Development",
+    image: images.project2,
+    alt: "orizon",
+  },
+  {
+    title: "Console",
+    category: "Console Applications",
+    image: images.project2,
+    alt: "orizon",
+  },
+  {
+    title: "Orizon",
+    category: "Web Development",
+    image: images.project2,
+    alt: "orizon",
+  },
+  // Add more projects here if needed
+];
 
 function Portfolio() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const handleCategoryClick = (category) => {
+    setIsDropdownOpen(!isDropdownOpen);
+    setActiveCategory(category);
+  };
+
+  const filteredProjects = projects.filter(
+    (project) => activeCategory === "All" || project.category === activeCategory
+  );
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggles the dropdown state
+  };
+
   return (
     <article className="portfolio active" data-page="portfolio">
       <header>
@@ -10,235 +65,72 @@ function Portfolio() {
 
       <section className="projects">
         <ul className="filter-list">
-          <li className="filter-item">
-            <button className="active" data-filter-btn>
-              All
-            </button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web design</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Applications</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web development</button>
-          </li>
+          {categories.map((category, index) => (
+            <li key={index} className="filter-item">
+              <button
+                className={activeCategory === category ? "active" : ""}
+                onClick={() => handleCategoryClick(category)}
+                data-filter-btn
+              >
+                {category}
+              </button>
+            </li>
+          ))}
         </ul>
 
-        <div className="filter-select-box">
-          <button className="filter-select" data-select>
-            <div className="select-value" data-selecct-value>
-              Select category
+        <div className="filter-select-box ">
+          <button
+            className={`filter-select active`}
+            data-select
+            onClick={handleDropdownToggle} // Toggle dropdown on click
+          >
+            <div className="select-value" data-select-value>
+              {activeCategory}
             </div>
 
             <div className="select-icon">
-              <ion-icon name="chevron-down"></ion-icon>
+              {isDropdownOpen ? <KeyboardArrowDown /> : <KeyboardArrowUp />}
             </div>
           </button>
 
-          <ul className="select-list">
-            <li className="select-item">
-              <button data-select-item>All</button>
-            </li>
-
-            <li className="select-item">
-              <button data-select-item>Web design</button>
-            </li>
-
-            <li className="select-item">
-              <button data-select-item>Applications</button>
-            </li>
-
-            <li className="select-item">
-              <button data-select-item>Web development</button>
-            </li>
-          </ul>
+          {/* Conditionally render the dropdown based on isDropdownOpen */}
+          {isDropdownOpen && (
+            <ul className="select-list">
+              {categories.map((category, index) => (
+                <li key={index} className="select-item">
+                  <button
+                    onClick={() => handleCategoryClick(category)}
+                    data-select-item
+                  >
+                    {category}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <ul className="project-list">
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+          {filteredProjects.map((project, index) => (
+            <li
+              key={index}
+              className="project-item active"
+              data-filter-item
+              data-category={project.category.toLowerCase()}
+            >
+              <a href="#">
+                <figure className="project-img">
+                  <div className="project-item-icon-box">
+                    <VisibilityOutlined />
+                  </div>
+                  <img src={project.image} alt={project.alt} loading="lazy" />
+                </figure>
 
-                <img src={images.project1} alt="finance" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Finance</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project2} alt="orizon" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Orizon</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project3} alt="fundo" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Fundo</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project4} alt="brawlhalla" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Brawlhalla</h3>
-
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project5} alt="dsm." loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">DSM.</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project6} alt="metaspark" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">MetaSpark</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project7} alt="summary" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Summary</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project8} alt="task manager" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Task Manager</h3>
-
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img src={images.project9} alt="arrival" loading="lazy" />
-              </figure>
-
-              <h3 className="project-title">Arrival</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-category">{project.category}</p>
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
     </article>

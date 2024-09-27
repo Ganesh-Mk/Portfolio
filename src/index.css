@@ -978,6 +978,8 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
+  display: grid;
+  place-items: center;
 }
 
 .project-item > a:hover .project-item-icon-box {

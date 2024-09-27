@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { images } from "../Images";
+import {
+  KeyboardArrowDown,
+  MailOutline,
+  PhoneIphone,
+  CalendarToday,
+  LocationOnOutlined,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "@mui/icons-material";
 
 function Sidebar() {
+  const [openContent, setOpenContent] = useState(false);
+
   return (
-    <aside className="sidebar" data-sidebar>
+    <aside className={openContent ? "sidebar active" : "sidebar"} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img src={images.avatar1} alt="Richard hanrick" width="80" />
@@ -17,10 +29,14 @@ function Sidebar() {
           <p className="title">Web developer</p>
         </div>
 
-        <button className="info_more-btn" data-sidebar-btn>
+        <button
+          className="info_more-btn"
+          onClick={() => setOpenContent((prev) => !prev)}
+          data-sidebar-btn
+        >
           <span>Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <KeyboardArrowDown />
         </button>
       </div>
 
@@ -30,7 +46,7 @@ function Sidebar() {
         <ul className="contacts-list">
           <li className="contact-item">
             <div className="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <MailOutline />
             </div>
 
             <div className="contact-info">
@@ -44,7 +60,7 @@ function Sidebar() {
 
           <li className="contact-item">
             <div className="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <PhoneIphone />
             </div>
 
             <div className="contact-info">
@@ -58,7 +74,7 @@ function Sidebar() {
 
           <li className="contact-item">
             <div className="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <CalendarToday />
             </div>
 
             <div className="contact-info">
@@ -70,7 +86,7 @@ function Sidebar() {
 
           <li className="contact-item">
             <div className="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <LocationOnOutlined />
             </div>
 
             <div className="contact-info">
@@ -86,19 +102,19 @@ function Sidebar() {
         <ul className="social-list">
           <li className="social-item">
             <a href="#" className="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <Facebook />
             </a>
           </li>
 
           <li className="social-item">
             <a href="#" className="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <Twitter />
             </a>
           </li>
 
           <li className="social-item">
             <a href="#" className="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <Instagram />
             </a>
           </li>
         </ul>
