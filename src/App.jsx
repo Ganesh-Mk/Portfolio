@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./index.css";
-import SideBar from "./components/SideBar";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
+import SideBar from "./pages/SideBar";
+import Navbar from "./pages/Navbar";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Portfolio from "./pages/Portfolio";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 function App() {
   const [activeSection, setActiveSection] = useState("About");
@@ -21,7 +21,7 @@ function App() {
             setActiveSection={setActiveSection}
           />
           {activeSection === "About" && <About />}
-          {activeSection === "Resume" && <Resume />}
+          {activeSection === "Skills" && <Skills />}
           {activeSection === "Portfolio" && <Portfolio />}
           {activeSection === "Blog" && <Blog />}
           {activeSection === "Contact" && <Contact />}

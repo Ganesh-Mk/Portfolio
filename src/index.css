@@ -228,6 +228,7 @@ article.active {
 
 .article-title {
   position: relative;
+  display: inline-block;
   padding-bottom: 7px;
 }
 
@@ -236,7 +237,7 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 100%;
   height: 3px;
   background: var(--text-gradient-yellow);
   border-radius: 3px;
@@ -464,7 +465,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-5);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -748,7 +749,7 @@ main {
 
 
 /*-----------------------------------*\
-  #RESUME
+  #SKILLS
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
@@ -821,7 +822,7 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { margin-bottom: 20px; text-align: center; }
 
 .skills-list { padding: 20px; }
 
@@ -1222,6 +1223,14 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
+ @media (max-width: 350px) {
+  .navbar-link {
+    font-size: var(--fs-8);
+  }
+ }
+
+
+
 @media (min-width: 450px) {
 
   /**
@@ -1230,6 +1239,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
+  
 
 
   /**
@@ -1254,6 +1264,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
+
 
   :root {
 
@@ -1289,7 +1300,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .article-title::after {
-    width: 40px;
+    width: 100%;
     height: 5px;
   }
 
@@ -1307,7 +1318,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 100px;
   }
 
@@ -1367,6 +1378,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .navbar-list { gap: 20px; }
 
   .navbar-link { --fs-8: 14px; }
+
 
 
 
@@ -1474,7 +1486,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #RESUME
+   * #SKILLS
    */
 
   .timeline-list { margin-left: 65px; }
@@ -1814,7 +1826,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 40px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
@@ -1863,9 +1875,73 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-	 * RESUME
+	 * SKILLS
 	 */
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+
+.skillContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+.skillBox .skill {
+  position: relative;
+  overflow: hidden;
+  height: 8em;
+  width: 8em;
+  padding: 1.5em;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  display: grid;
+}
+.skillBox .skill img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: translateZ(20px);
+  z-index: 4;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+.skillBox .skill .skillName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in-out;
+  transition-delay: .1s;
+}
+
+.skillBox .skill .skillName p{
+  font-size: 100%;
+  color: white;
+  font-weight: 400;
+  transition: .3s ease-in-out forward;
+}
+
+.skillBox .skill:hover .skillName {
+  transform: translateY(25%);
+}
+
+.skillBox .skill:hover img {
+  transform: translateY(-25%) scale(.75);
 }

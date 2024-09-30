@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { images } from "../Images";
 import {
   KeyboardArrowDown,
+  KeyboardArrowUp,
   MailOutline,
   PhoneIphone,
   CalendarToday,
@@ -36,7 +37,7 @@ function Sidebar() {
         >
           <span>Show Contacts</span>
 
-          <KeyboardArrowDown />
+          {openContent ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
         </button>
       </div>
 

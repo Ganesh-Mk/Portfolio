@@ -37,6 +37,15 @@ import project7 from "./assets/images/project-7.png";
 import project8 from "./assets/images/project-8.jpg";
 import project9 from "./assets/images/project-9.png";
 
+import html from "./assets/skillIcons/html-5.png";
+import css from "./assets/skillIcons/css.jpg";
+import js from "./assets/skillIcons/javascript-without-label.png";
+import react from "./assets/skillIcons/reactjs.png";
+
+import nextjs from "./assets/skillIcons/nextjs.png";
+import redux from "./assets/skillIcons/redux.png";
+import github from "./assets/skillIcons/github.png";
+
 export const images = {
   myAvatar,
   logoIco,
@@ -71,4 +80,14 @@ export const images = {
   project7,
   project8,
   project9,
+  html,
+  css,
+  js,
+  react,
+  // node,
+  // express,
+  // mongo,
+  nextjs,
+  redux,
+  github,
 };
