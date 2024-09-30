@@ -17,6 +17,21 @@ function Skills() {
       <section className="skill">
         <h3 className="h3 skills-title">Overview Skills</h3>
 
+        <div
+          style={{
+            display: "grid",
+            justifyContent: "end",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+            justifyItems: "end",
+            padding: ".5rem 2rem",
+          }}
+        >
+          <p className="skillsOverviewText"></p>
+          <p className="skillsOverviewText">Basic</p>
+          <p className="skillsOverviewText">Good</p>
+          <p className="skillsOverviewText">Skilled</p>
+          <p className="skillsOverviewText">Master</p>
+        </div>
         <ul className="skills-list content-card">
           <li className="skills-item">
             <div className="title-wrapper">

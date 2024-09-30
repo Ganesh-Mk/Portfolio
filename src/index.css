@@ -432,6 +432,8 @@ main {
 }
 
 
+
+
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
@@ -1884,6 +1886,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+
+
+
+
+/* SKILLS */
+
 .skillContainer {
   display: flex;
   justify-content: center;
@@ -1896,8 +1904,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .skillBox .skill {
   position: relative;
   overflow: hidden;
-  height: 8em;
-  width: 8em;
+  height: 7em;
+  width: 7em;
   padding: 1.5em;
   background: var(--border-gradient-onyx);
   padding: 20px;
@@ -1944,4 +1952,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skillBox .skill:hover img {
   transform: translateY(-25%) scale(.75);
+}
+
+
+
+@media screen and (max-width: 370px) {
+  .skillBox .skill {
+    height: 6em;
+    width: 6em;
+  }
+}
+
+
+.skillsOverviewText{
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
 }

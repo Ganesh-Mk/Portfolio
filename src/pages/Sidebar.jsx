@@ -39,19 +39,6 @@ function Sidebar() {
 
           {openContent ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
         </button>
-        <ul className="social-list">
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <Twitter />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <Instagram />
-            </a>
-          </li>
-        </ul>
       </div>
 
       <div className="sidebar-info_more">
@@ -112,6 +99,34 @@ function Sidebar() {
         </ul>
 
         <div className="separator"></div>
+        <ul className="social-list">
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Twitter />
+            </a>
+          </li>
+
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Instagram />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Instagram />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Instagram />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Instagram />
+            </a>
+          </li>
+        </ul>
       </div>
     </aside>
   );

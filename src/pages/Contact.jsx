@@ -1,5 +1,6 @@
 import React from "react";
 import SendIcon from "@mui/icons-material/Send";
+import { Instagram, Twitter } from "@mui/icons-material";
 
 function Contact() {
   return (
@@ -8,9 +9,74 @@ function Contact() {
         <h2 className="h2 article-title">Contact</h2>
       </header>
 
-      <section className="contact-form">
-        <h3 className="h3 form-title">Contact Form</h3>
+      <h3 className="h3 form-title" style={{ textAlign: "center" }}>
+        Connect with me
+      </h3>
 
+      <ul
+        className="social-list"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "1.3rem",
+          marginBottom: "2rem",
+        }}
+      >
+        <li className="social-item">
+          <a href="#" className="social-link">
+            <Twitter
+              style={{
+                width: "2.3rem",
+                height: "3rem",
+              }}
+            />
+          </a>
+        </li>
+
+        <li className="social-item">
+          <a href="#" className="social-link">
+            <Instagram
+              style={{
+                width: "2.3rem",
+                height: "3rem",
+              }}
+            />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="#" className="social-link">
+            <Instagram
+              style={{
+                width: "2.3rem",
+                height: "3rem",
+              }}
+            />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="#" className="social-link">
+            <Instagram
+              style={{
+                width: "2.3rem",
+                height: "3rem",
+              }}
+            />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="#" className="social-link">
+            <Instagram
+              style={{
+                width: "2.3rem",
+                height: "3rem",
+              }}
+            />
+          </a>
+        </li>
+      </ul>
+
+      <section className="contact-form">
         <form action="#" className="form" data-form>
           <div className="input-wrapper">
             <input
