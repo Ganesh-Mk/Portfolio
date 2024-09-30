@@ -24,10 +24,10 @@ function Sidebar() {
 
         <div className="info-content">
           <h1 className="name" title="Richard hanrick">
-            Richard hanrick
+            Ganesh Koparde
           </h1>
 
-          <p className="title">Web developer</p>
+          <p className="title">Full Stack Developer</p>
         </div>
 
         <button
@@ -39,6 +39,19 @@ function Sidebar() {
 
           {openContent ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
         </button>
+        <ul className="social-list">
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Twitter />
+            </a>
+          </li>
+
+          <li className="social-item">
+            <a href="#" className="social-link">
+              <Instagram />
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div className="sidebar-info_more">
@@ -53,8 +66,8 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">
-                richard@example.com
+              <a href="mailto:ganeshmk247@gmail.com" className="contact-link">
+                ganeshmk247@gmail.com
               </a>
             </div>
           </li>
@@ -68,7 +81,7 @@ function Sidebar() {
               <p className="contact-title">Phone</p>
 
               <a href="tel:+12133522795" className="contact-link">
-                +1 (213) 352-2795
+                +91 9380795986
               </a>
             </div>
           </li>
@@ -81,7 +94,7 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
 
-              <time dateTime="1982-06-23">June 23, 1982</time>
+              <time dateTime="1982-06-23">Dec 17, 2004</time>
             </div>
           </li>
 
@@ -93,32 +106,12 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Gokak, Karnataka, India</address>
             </div>
           </li>
         </ul>
 
         <div className="separator"></div>
-
-        <ul className="social-list">
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <Facebook />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <Twitter />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="#" className="social-link">
-              <Instagram />
-            </a>
-          </li>
-        </ul>
       </div>
     </aside>
   );
