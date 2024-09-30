@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import SideBar from "./pages/SideBar";
+import SideBar from "./pages/Sidebar";
 import Navbar from "./pages/Navbar";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
