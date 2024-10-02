@@ -1,6 +1,12 @@
 import React from "react";
 import SendIcon from "@mui/icons-material/Send";
-import { Instagram, Twitter } from "@mui/icons-material";
+import {
+  GitHub,
+  Instagram,
+  LinkedIn,
+  Twitter,
+  WhatsApp,
+} from "@mui/icons-material";
 
 function Contact() {
   return (
@@ -24,7 +30,7 @@ function Contact() {
         }}
       >
         <li className="social-item">
-          <a href="#" className="social-link">
+          <a href="https://x.com/Ganesh_Koparde_" className="social-link">
             <Twitter
               style={{
                 width: "2.3rem",
@@ -35,7 +41,10 @@ function Contact() {
         </li>
 
         <li className="social-item">
-          <a href="#" className="social-link">
+          <a
+            href="https://www.instagram.com/ganesh_mk_247/"
+            className="social-link"
+          >
             <Instagram
               style={{
                 width: "2.3rem",
@@ -45,8 +54,8 @@ function Contact() {
           </a>
         </li>
         <li className="social-item">
-          <a href="#" className="social-link">
-            <Instagram
+          <a href="https://github.com/Ganesh-Mk" className="social-link">
+            <GitHub
               style={{
                 width: "2.3rem",
                 height: "3rem",
@@ -55,8 +64,11 @@ function Contact() {
           </a>
         </li>
         <li className="social-item">
-          <a href="#" className="social-link">
-            <Instagram
+          <a
+            href="https://www.linkedin.com/in/ganesh-koparde/"
+            className="social-link"
+          >
+            <LinkedIn
               style={{
                 width: "2.3rem",
                 height: "3rem",
@@ -65,8 +77,8 @@ function Contact() {
           </a>
         </li>
         <li className="social-item">
-          <a href="#" className="social-link">
-            <Instagram
+          <a href="https://wa.me/9380795986" className="social-link">
+            <WhatsApp
               style={{
                 width: "2.3rem",
                 height: "3rem",

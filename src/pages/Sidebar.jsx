@@ -7,9 +7,11 @@ import {
   PhoneIphone,
   CalendarToday,
   LocationOnOutlined,
-  Facebook,
   Twitter,
   Instagram,
+  GitHub,
+  LinkedIn,
+  WhatsApp,
 } from "@mui/icons-material";
 
 function Sidebar() {
@@ -67,7 +69,7 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" className="contact-link">
+              <a href="tel:+91 9380795986" className="contact-link">
                 +91 9380795986
               </a>
             </div>
@@ -101,29 +103,35 @@ function Sidebar() {
         <div className="separator"></div>
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://x.com/Ganesh_Koparde_" className="social-link">
               <Twitter />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a
+              href="https://www.instagram.com/ganesh_mk_247/"
+              className="social-link"
+            >
               <Instagram />
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <Instagram />
+            <a href="https://github.com/Ganesh-Mk" className="social-link">
+              <GitHub />
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <Instagram />
+            <a href="https://wa.me/9380795986" className="social-link">
+              <WhatsApp />
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <Instagram />
+            <a
+              href="https://www.linkedin.com/in/ganesh-koparde/"
+              className="social-link"
+            >
+              <LinkedIn />
             </a>
           </li>
         </ul>

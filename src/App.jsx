@@ -5,7 +5,7 @@ import Navbar from "./pages/Navbar";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
-import Blog from "./pages/Blog";
+import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           {activeSection === "About" && <About />}
           {activeSection === "Skills" && <Skills />}
           {activeSection === "Portfolio" && <Portfolio />}
-          {activeSection === "Blog" && <Blog />}
+          {activeSection === "Achievements" && <Achievements />}
           {activeSection === "Contact" && <Contact />}
         </div>
       </main>

@@ -1961,7 +1961,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 6em;
     width: 6em;
   }
+  
 }
+
 
 
 .skillsOverviewText{
@@ -1969,3 +1971,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+@media screen and (max-width: 450px) {
+  .skillsOverviewText{
+    font-size: var(--fs-8);
+  }
+} 

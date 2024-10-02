@@ -40,7 +40,7 @@ import project9 from "./assets/images/project-9.png";
 import html from "./assets/skillIcons/html-5.png";
 import css from "./assets/skillIcons/css.jpg";
 import js from "./assets/skillIcons/javascript-without-label.png";
-import react from "./assets/skillIcons/reactjs.png";
+import react from "./assets/skillIcons/Reactjs-2.png";
 
 import nextjs from "./assets/skillIcons/nextjs.png";
 import redux from "./assets/skillIcons/redux.png";

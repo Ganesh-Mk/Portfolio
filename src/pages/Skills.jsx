@@ -22,8 +22,8 @@ function Skills() {
             display: "grid",
             justifyContent: "end",
             gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-            justifyItems: "end",
-            padding: ".5rem 2rem",
+            justifyItems: "center",
+            padding: ".5rem 0rem",
           }}
         >
           <p className="skillsOverviewText"></p>
