@@ -14,18 +14,16 @@ function About() {
 
       <section className="about-text">
         <p>
-          I'm Creative Director and UI/UX Designer from Sydney, Australia,
-          working in web development and print media. I enjoy turning complex
-          problems into simple, beautiful and intuitive designs.
+          A dedicated developer with experience in both web and app development,
+          specializing in full-stack projects. I have a strong foundation in
+          problem-solving, enhanced by my work on DSA challenges.
         </p>
 
         <p>
-          My job is to build your website so that it is functional and
-          user-friendly but at the same time attractive. Moreover, I add
-          personal touch to your product and make sure that is eye-catching and
-          easy to use. My aim is to bring across your message and identity in
-          the most creative way. I created web design for many famous brand
-          companies.
+          I've interned in collaborative environments, utilizing GitHub for
+          version control and delivering high-quality, production-level code. My
+          aim is to bring your projects to life with modern solutions and best
+          practices. Let's create something amazing together!
         </p>
       </section>
 

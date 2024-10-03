@@ -103,12 +103,6 @@ function Sidebar() {
         <div className="separator"></div>
         <ul className="social-list">
           <li className="social-item">
-            <a href="https://x.com/Ganesh_Koparde_" className="social-link">
-              <Twitter />
-            </a>
-          </li>
-
-          <li className="social-item">
             <a
               href="https://www.instagram.com/ganesh_mk_247/"
               className="social-link"
@@ -117,13 +111,8 @@ function Sidebar() {
             </a>
           </li>
           <li className="social-item">
-            <a href="https://github.com/Ganesh-Mk" className="social-link">
-              <GitHub />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://wa.me/9380795986" className="social-link">
-              <WhatsApp />
+            <a href="https://x.com/Ganesh_Koparde_" className="social-link">
+              <Twitter />
             </a>
           </li>
           <li className="social-item">
@@ -132,6 +121,17 @@ function Sidebar() {
               className="social-link"
             >
               <LinkedIn />
+            </a>
+          </li>
+
+          <li className="social-item">
+            <a href="https://github.com/Ganesh-Mk" className="social-link">
+              <GitHub />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="https://wa.me/9380795986" className="social-link">
+              <WhatsApp />
             </a>
           </li>
         </ul>

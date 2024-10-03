@@ -950,6 +950,8 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  background: #282829;
+  padding: 1rem 0;
 }
 
 .project-img::before {
@@ -1006,7 +1008,7 @@ main {
 
 .project-title {
   color: var(--white-2);
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   font-weight: var(--fw-400);
   text-transform: capitalize;
   line-height: 1.3;

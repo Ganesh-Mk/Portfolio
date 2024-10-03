@@ -29,13 +29,13 @@ function Navbar({ activeSection, setActiveSection }) {
         <li className="navbar-item">
           <button
             className={
-              activeSection === "Portfolio"
+              activeSection === "Projects"
                 ? " navbar-link active"
                 : "navbar-link"
             }
-            onClick={() => setActiveSection("Portfolio")}
+            onClick={() => setActiveSection("Projects")}
           >
-            Portfolio
+            Projects
           </button>
         </li>
 
@@ -48,7 +48,7 @@ function Navbar({ activeSection, setActiveSection }) {
             }
             onClick={() => setActiveSection("Achievements")}
           >
-            Achievements
+            Achieve
           </button>
         </li>
 

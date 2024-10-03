@@ -1,46 +1,10 @@
 import React, { useState } from "react";
-import { images } from "../Images";
-import {
-  KeyboardArrowDown,
-  KeyboardArrowUp,
-  VisibilityOutlined,
-} from "@mui/icons-material";
+import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
+import { projects, categories } from "../data/projectsData";
 
-const categories = [
-  "All",
-  "Web Development",
-  "App Development",
-  "Console Applications",
-];
-const projects = [
-  {
-    title: "WEB",
-    category: "Web Development",
-    image: images.project1,
-    alt: "finance",
-  },
-  {
-    title: "App",
-    category: "App Development",
-    image: images.project2,
-    alt: "orizon",
-  },
-  {
-    title: "Console",
-    category: "Console Applications",
-    image: images.project2,
-    alt: "orizon",
-  },
-  {
-    title: "Orizon",
-    category: "Web Development",
-    image: images.project2,
-    alt: "orizon",
-  },
-  // Add more projects here if needed
-];
+import ProjectItem from "../components/ProjectItem";
 
-function Portfolio() {
+function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const handleCategoryClick = (category) => {
@@ -60,7 +24,7 @@ function Portfolio() {
   return (
     <article className="portfolio active" data-page="portfolio">
       <header>
-        <h2 className="h2 article-title">Portfolio</h2>
+        <h2 className="h2 article-title">Projects</h2>
       </header>
 
       <section className="projects">
@@ -112,24 +76,7 @@ function Portfolio() {
 
         <ul className="project-list">
           {filteredProjects.map((project, index) => (
-            <li
-              key={index}
-              className="project-item active"
-              data-filter-item
-              data-category={project.category.toLowerCase()}
-            >
-              <a href="#">
-                <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <VisibilityOutlined />
-                  </div>
-                  <img src={project.image} alt={project.alt} loading="lazy" />
-                </figure>
-
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-category">{project.category}</p>
-              </a>
-            </li>
+            <ProjectItem key={index} project={project} />
           ))}
         </ul>
       </section>
@@ -137,4 +84,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

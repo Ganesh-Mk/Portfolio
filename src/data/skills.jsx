@@ -21,67 +21,67 @@ export const frontendSkillsData = [
     alt: "ReactJs",
   },
   {
-    name: "React-Native",
-    image: `${images.react}`,
+    name: "React-Native & Expo",
+    image: `${images.expo}`,
     alt: "React-Native",
   },
-  {
-    name: "NextJs",
-    image: `${images.react}`,
-    alt: "NextJs",
-  },
+  // {
+  //   name: "NextJs",
+  //   image: `${images.nextjs}`,
+  //   alt: "NextJs",
+  // },
 ];
 export const backendSkillsData = [
   {
     name: "NodeJs",
-    image: `${images.html}`,
+    image: `${images.nodejs}`,
     alt: "NodeJs",
   },
   {
     name: "ExpressJs",
-    image: `${images.css}`,
+    image: `${images.expressjs}`,
     alt: "ExpressJs",
   },
   {
     name: "MongoDB",
-    image: `${images.js}`,
+    image: `${images.mongodb}`,
     alt: "MongoDB",
   },
   {
     name: "SQL",
-    image: `${images.react}`,
+    image: `${images.sql}`,
     alt: "SQL",
   },
 ];
 export const programmingLangSkillsData = [
   {
     name: "Javascript",
-    image: `${images.html}`,
+    image: `${images.js}`,
     alt: "Javascript",
   },
   {
     name: "Python",
-    image: `${images.css}`,
+    image: `${images.python}`,
     alt: "Python",
   },
   {
     name: "Java",
-    image: `${images.js}`,
+    image: `${images.java}`,
     alt: "Java",
   },
   {
     name: "C",
-    image: `${images.react}`,
+    image: `${images.c}`,
     alt: "C",
   },
   {
     name: "R",
-    image: `${images.react}`,
+    image: `${images.r}`,
     alt: "R",
   },
   {
     name: "C#",
-    image: `${images.react}`,
+    image: `${images.csharp}`,
     alt: "C#",
   },
 ];
@@ -89,27 +89,27 @@ export const programmingLangSkillsData = [
 export const librarySkillsData = [
   {
     name: "GSAP",
-    image: `${images.html}`,
+    image: `${images.gsap}`,
     alt: "GSAP",
   },
   {
     name: "Material-UI",
-    image: `${images.css}`,
+    image: `${images.materialUi}`,
     alt: "Material-UI",
   },
   {
     name: "Socket.io",
-    image: `${images.js}`,
+    image: `${images.socketio}`,
     alt: "Socket.io",
   },
   {
     name: "Redux",
-    image: `${images.react}`,
+    image: `${images.redux}`,
     alt: "Redux",
   },
   {
     name: "Expo",
-    image: `${images.react}`,
+    image: `${images.expo}`,
     alt: "Expo",
   },
 ];

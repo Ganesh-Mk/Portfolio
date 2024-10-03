@@ -12,7 +12,7 @@ function SkillsItems({ title, skillsData }) {
             <div className="skill service-item">
               <img src={skill.image} alt={skill.alt} />
               <div className="skillName">
-                <p>{skill.name}</p>
+                <p style={{ textAlign: "center" }}>{skill.name}</p>
               </div>
             </div>
           </div>

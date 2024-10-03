@@ -6,12 +6,28 @@ import avatar2 from "./assets/images/avatar-2.png";
 import avatar3 from "./assets/images/avatar-3.png";
 import avatar4 from "./assets/images/avatar-4.png";
 
-import iconApp from "./assets/images/icon-app.svg";
-import iconDesign from "./assets/images/icon-design.svg";
-import iconDev from "./assets/images/icon-dev.svg";
-import iconPhoto from "./assets/images/icon-photo.svg";
-import iconQuote from "./assets/images/icon-quote.svg";
 import logo from "./assets/images/logo.svg";
+import webdev from "./assets/images/webdev.png";
+import hackathon from "./assets/images/hackathon.png";
+import appdev from "./assets/images/appdev.png";
+import dsa from "./assets/images/dsa.png";
+import dsaIcon from "./assets/images/dsaIcon.png";
+import expo from "./assets/skillIcons/expo.svg";
+import nodejs from "./assets/skillIcons/nodejs.png";
+import expressjs from "./assets/skillIcons/expressjs.png";
+import mongodb from "./assets/skillIcons/mongodb.png";
+import sql from "./assets/skillIcons/sql.png";
+import gsap from "./assets/skillIcons/gsap.png";
+import materialUi from "./assets/skillIcons/materialUi.png";
+import socketio from "./assets/skillIcons/socketio.png";
+import python from "./assets/skillIcons/python.png";
+import c from "./assets/skillIcons/c.png";
+import r from "./assets/skillIcons/r.png";
+import csharp from "./assets/skillIcons/csharp.png";
+import hangmangame from "./assets/projects/hangmangame.png";
+import memecat from "./assets/images/memecat.jpg";
+import codebro from "./assets/projects/codebro.png";
+import codebro2 from "./assets/projects/codebro2.png";
 
 import logo1 from "./assets/images/logo-1-color.png";
 import logo2 from "./assets/images/logo-2-color.png";
@@ -36,8 +52,9 @@ import project6 from "./assets/images/project-6.png";
 import project7 from "./assets/images/project-7.png";
 import project8 from "./assets/images/project-8.jpg";
 import project9 from "./assets/images/project-9.png";
+import java from "./assets/skillIcons/java.png";
 
-import html from "./assets/skillIcons/html-5.png";
+import html from "./assets/skillIcons/html.png";
 import css from "./assets/skillIcons/css.jpg";
 import js from "./assets/skillIcons/javascript-without-label.png";
 import react from "./assets/skillIcons/Reactjs-2.png";
@@ -53,11 +70,7 @@ export const images = {
   avatar2,
   avatar3,
   avatar4,
-  iconApp,
-  iconDesign,
-  iconDev,
-  iconPhoto,
-  iconQuote,
+
   logo,
   logo1,
   logo2,
@@ -90,4 +103,26 @@ export const images = {
   nextjs,
   redux,
   github,
+  webdev,
+  hackathon,
+  appdev,
+  dsa,
+  dsaIcon,
+  expo,
+  nodejs,
+  expressjs,
+  mongodb,
+  sql,
+  gsap,
+  materialUi,
+  socketio,
+  python,
+  c,
+  r,
+  csharp,
+  java,
+  hangmangame,
+  memecat,
+  codebro,
+  codebro2,
 };

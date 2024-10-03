@@ -1,5 +1,4 @@
 import React from "react";
-import { images } from "../Images";
 import AchievementItem from "../components/AchievementItem";
 import { achievementData } from "../data/achievementsData";
 
