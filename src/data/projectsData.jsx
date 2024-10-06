@@ -11,7 +11,13 @@ export const projects = [
   {
     title: "CodeBro",
     category: "Web Development",
-    images: [images.codebro, images.project1, images.project2, images.project3],
+    images: [
+      images.codebro1,
+      images.codebro2,
+      images.codebro3,
+      images.codebro4,
+      images.codebro5,
+    ],
     alt: "Project image",
     desc: `Coding Problem-Solving Platform
     
@@ -42,7 +48,13 @@ export const projects = [
   {
     title: "Project is on the process...",
     category: "App Development",
-    images: [images.memecat],
+    images: [
+      images.codebro1,
+      images.codebro2,
+      images.codebro3,
+      images.codebro4,
+      images.codebro5,
+    ],
     desc: "It's about cat project It's about cat project",
     alt: "Project image",
   },
@@ -51,7 +63,39 @@ export const projects = [
   {
     title: "Hang Man Game",
     category: "Console Applications",
-    images: [images.hangmangame],
+    images: [
+      images.codebro1,
+      images.codebro2,
+      images.codebro3,
+      images.codebro4,
+      images.codebro5,
+    ],
+    alt: "Project image",
+    desc: "Crafted HangManGame using Java with dynamic words and it's length. ",
+  },
+  {
+    title: "Hang Man Game3",
+    category: "Console Applications",
+    images: [
+      images.codebro1,
+      images.codebro2,
+      images.codebro3,
+      images.codebro4,
+      images.codebro5,
+    ],
+    alt: "Project image",
+    desc: "Crafted HangManGame using Java with dynamic words and it's length. ",
+  },
+  {
+    title: "Hang Man Game4",
+    category: "Console Applications",
+    images: [
+      images.codebro1,
+      images.codebro2,
+      images.codebro3,
+      images.codebro4,
+      images.codebro5,
+    ],
     alt: "Project image",
     desc: "Crafted HangManGame using Java with dynamic words and it's length. ",
   },

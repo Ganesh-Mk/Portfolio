@@ -26,8 +26,6 @@ import r from "./assets/skillIcons/r.png";
 import csharp from "./assets/skillIcons/csharp.png";
 import hangmangame from "./assets/projects/hangmangame.png";
 import memecat from "./assets/images/memecat.jpg";
-import codebro from "./assets/projects/codebro.png";
-import codebro2 from "./assets/projects/codebro2.png";
 
 import logo1 from "./assets/images/logo-1-color.png";
 import logo2 from "./assets/images/logo-2-color.png";
@@ -62,6 +60,12 @@ import react from "./assets/skillIcons/Reactjs-2.png";
 import nextjs from "./assets/skillIcons/nextjs.png";
 import redux from "./assets/skillIcons/redux.png";
 import github from "./assets/skillIcons/github.png";
+
+import codebro1 from "./assets/projects/codebro1.png";
+import codebro2 from "./assets/projects/codebro2.png";
+import codebro3 from "./assets/projects/codebro3.png";
+import codebro4 from "./assets/projects/codebro4.png";
+import codebro5 from "./assets/projects/codebro5.png";
 
 export const images = {
   myAvatar,
@@ -123,6 +127,9 @@ export const images = {
   java,
   hangmangame,
   memecat,
-  codebro,
+  codebro1,
   codebro2,
+  codebro3,
+  codebro4,
+  codebro5,
 };

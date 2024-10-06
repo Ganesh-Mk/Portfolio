@@ -7,8 +7,14 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  Button,
 } from "@mui/material";
-import { VisibilityOutlined } from "@mui/icons-material";
+import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InfoIcon from "@mui/icons-material/Info";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz"; // Option 2
+
+import { Instagram, VisibilityOutlined } from "@mui/icons-material";
 import { images } from "../Images";
 import CloseIcon from "@mui/icons-material/Close";
 import "slick-carousel/slick/slick.css";
@@ -28,6 +34,18 @@ function ProjectItem({ index, project }) {
     setIsDragging(false);
   };
 
+  const buttonContainer = {
+    cursor: "pointer",
+    width: "3rem",
+    height: "3rem",
+    padding: ".7rem",
+  };
+  const buttonTextStyle = {
+    textAlign: "center",
+    fontSize: "0.6rem",
+    marginTop: "0.5rem",
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -38,6 +56,7 @@ function ProjectItem({ index, project }) {
     autoplaySpeed: 3000,
     arrows: true,
     cssEase: "ease",
+    pauseOnHover: false,
   };
 
   const handleReadMoreDialogOpen = () => {
@@ -57,9 +76,12 @@ function ProjectItem({ index, project }) {
         data-category={project.category.toLowerCase()}
         onClick={handleReadMoreDialogOpen}
       >
-        <a href="#">
+        <div>
           <figure className="project-img">
-            <div className="project-item-icon-box">
+            <div
+              className="project-item-icon-box"
+              style={{ cursor: "pointer" }}
+            >
               <VisibilityOutlined />
               <p style={{ fontSize: "0.6rem" }}>View More</p>
             </div>
@@ -70,9 +92,39 @@ function ProjectItem({ index, project }) {
 
           <p className="project-category">{`${project.desc.slice(
             0,
-            50
+            100
           )}...`}</p>
-        </a>
+
+          <div
+            className="skillBox hidden"
+            style={{
+              marginTop: "1rem",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              gap: "1rem",
+            }}
+          >
+            <div className="skill service-item" style={buttonContainer}>
+              <LaunchIcon className="project-btns" />
+              <div className="skillName">
+                <p style={buttonTextStyle}>Live</p>
+              </div>
+            </div>
+            <div className="skill service-item" style={buttonContainer}>
+              <GitHubIcon className="project-btns" />
+              <div className="skillName">
+                <p style={buttonTextStyle}>Repo</p>
+              </div>
+            </div>
+            <div className="skill service-item" style={buttonContainer}>
+              <MoreHorizIcon className="project-btns" />
+              <div className="skillName">
+                <p style={buttonTextStyle}>More</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
 
       <Dialog
@@ -142,13 +194,19 @@ function ProjectItem({ index, project }) {
         >
           <Slider {...settings}>
             {project.images.map((image, index) => (
-              <div key={index} style={{ textAlign: "center" }}>
+              <div
+                key={index}
+                style={{
+                  textAlign: "center",
+                }}
+              >
                 <img
                   src={image}
                   alt="image1"
                   style={{
                     borderRadius: "1rem",
                     maxWidth: "90%",
+                    maxHeight: "20rem",
                     margin: "0 auto",
                     cursor: isDragging ? "grabbing" : "grab",
                   }}
@@ -170,7 +228,7 @@ function ProjectItem({ index, project }) {
                 sx={{
                   color: "lightGrey",
                   fontFamily: "poppins",
-                  fontSize: { xs: "1.1rem", lg: "1.2rem" },
+                  fontSize: { xs: ".9rem", lg: "1.2rem" },
                   lineHeight: "1.5",
                 }}
                 dangerouslySetInnerHTML={{ __html: `${project.desc}` }}
