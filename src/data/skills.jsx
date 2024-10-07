@@ -25,6 +25,21 @@ export const frontendSkillsData = [
     image: `${images.expo}`,
     alt: "React-Native",
   },
+  {
+    name: "GSAP",
+    image: `${images.gsap}`,
+    alt: "GSAP",
+  },
+  {
+    name: "Material-UI",
+    image: `${images.materialUi}`,
+    alt: "Material-UI",
+  },
+  {
+    name: "Redux",
+    image: `${images.redux}`,
+    alt: "Redux",
+  },
   // {
   //   name: "NextJs",
   //   image: `${images.nextjs}`,
@@ -51,6 +66,11 @@ export const backendSkillsData = [
     name: "SQL",
     image: `${images.sql}`,
     alt: "SQL",
+  },
+  {
+    name: "Socket.io",
+    image: `${images.socketio}`,
+    alt: "Socket.io",
   },
 ];
 export const programmingLangSkillsData = [
@@ -83,33 +103,5 @@ export const programmingLangSkillsData = [
     name: "C#",
     image: `${images.csharp}`,
     alt: "C#",
-  },
-];
-
-export const librarySkillsData = [
-  {
-    name: "GSAP",
-    image: `${images.gsap}`,
-    alt: "GSAP",
-  },
-  {
-    name: "Material-UI",
-    image: `${images.materialUi}`,
-    alt: "Material-UI",
-  },
-  {
-    name: "Socket.io",
-    image: `${images.socketio}`,
-    alt: "Socket.io",
-  },
-  {
-    name: "Redux",
-    image: `${images.redux}`,
-    alt: "Redux",
-  },
-  {
-    name: "Expo",
-    image: `${images.expo}`,
-    alt: "Expo",
   },
 ];

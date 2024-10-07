@@ -975,7 +975,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > div:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-img:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -996,7 +996,7 @@ main {
   place-items: center;
 }
 
-.project-item > div:hover .project-item-icon-box {
+.project-img:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1017,8 +1017,10 @@ main {
   transition: .2s ease-in-out;
 }
 
-.project-item > div:hover img { transform: scale(1.1); }
-
+.project-img:hover img { transform: scale(1.1); }
+.project-img:hover{
+  cursor: pointer;
+}
 .project-title,
 .project-category { margin-left: 10px; }
 
@@ -2003,4 +2005,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 .css-wkv7oa-MuiPaper-root-MuiDialog-paper {
   width: 100% !important;
   margin: 10px !important;
+}
+
+.slick-track{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-next{
+  right: -10px !important;
+}
+.slick-prev{
+  left: -10px !important;
 }

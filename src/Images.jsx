@@ -24,7 +24,6 @@ import python from "./assets/skillIcons/python.png";
 import c from "./assets/skillIcons/c.png";
 import r from "./assets/skillIcons/r.png";
 import csharp from "./assets/skillIcons/csharp.png";
-import hangmangame from "./assets/projects/hangmangame.png";
 import memecat from "./assets/images/memecat.jpg";
 
 import logo1 from "./assets/images/logo-1-color.png";
@@ -67,7 +66,21 @@ import codebro3 from "./assets/projects/codebro3.png";
 import codebro4 from "./assets/projects/codebro4.png";
 import codebro5 from "./assets/projects/codebro5.png";
 
+import meaw1 from "./assets/projects/meaw1.png";
+import meaw2 from "./assets/projects/meaw2.png";
+import meaw3 from "./assets/projects/meaw3.png";
+import meaw4 from "./assets/projects/meaw4.png";
+
+import hangmangame1 from "./assets/projects/hangmangame1.png";
+import hangmangame2 from "./assets/projects/hangmangame2.png";
+import hangmangame3 from "./assets/projects/hangmangame3.png";
+
+import laptopCat from "./assets/images/laptop-cat.gif";
+import second from "./assets/achievements/second.jpg";
+
 export const images = {
+  second,
+  laptopCat,
   myAvatar,
   logoIco,
   avatar1,
@@ -125,11 +138,19 @@ export const images = {
   r,
   csharp,
   java,
-  hangmangame,
   memecat,
   codebro1,
   codebro2,
   codebro3,
   codebro4,
   codebro5,
+
+  meaw1,
+  meaw2,
+  meaw3,
+  meaw4,
+
+  hangmangame1,
+  hangmangame2,
+  hangmangame3,
 };

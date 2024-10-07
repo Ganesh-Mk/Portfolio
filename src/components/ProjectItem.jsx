@@ -7,15 +7,16 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
-  Button,
 } from "@mui/material";
 import LaunchIcon from "@mui/icons-material/Launch";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InfoIcon from "@mui/icons-material/Info";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz"; // Option 2
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
-import { Instagram, VisibilityOutlined } from "@mui/icons-material";
-import { images } from "../Images";
+import {
+  LinkedIn,
+  VideoCameraBackRounded,
+  VisibilityOutlined,
+} from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,7 +25,6 @@ import Slider from "react-slick";
 function ProjectItem({ index, project }) {
   const [openReadMoreDialog, setOpenReadMoreDialog] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
-  console.log(project);
 
   const handleMouseDown = () => {
     setIsDragging(true);
@@ -43,6 +43,7 @@ function ProjectItem({ index, project }) {
   const buttonTextStyle = {
     textAlign: "center",
     fontSize: "0.6rem",
+    color: "white",
     marginTop: "0.5rem",
   };
 
@@ -52,7 +53,7 @@ function ProjectItem({ index, project }) {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
     cssEase: "ease",
@@ -74,10 +75,9 @@ function ProjectItem({ index, project }) {
         className="project-item active"
         data-filter-item
         data-category={project.category.toLowerCase()}
-        onClick={handleReadMoreDialogOpen}
       >
         <div>
-          <figure className="project-img">
+          <figure className="project-img" onClick={handleReadMoreDialogOpen}>
             <div
               className="project-item-icon-box"
               style={{ cursor: "pointer" }}
@@ -89,11 +89,9 @@ function ProjectItem({ index, project }) {
           </figure>
 
           <h3 className="project-title">{project.title}</h3>
-
-          <p className="project-category">{`${project.desc.slice(
-            0,
-            100
-          )}...`}</p>
+          <div style={{ maxHeight: "4rem", overflow: "hidden" }}>
+            <p className="project-category">{project.desc}</p>
+          </div>
 
           <div
             className="skillBox hidden"
@@ -105,19 +103,44 @@ function ProjectItem({ index, project }) {
               gap: "1rem",
             }}
           >
-            <div className="skill service-item" style={buttonContainer}>
-              <LaunchIcon className="project-btns" />
-              <div className="skillName">
-                <p style={buttonTextStyle}>Live</p>
-              </div>
-            </div>
-            <div className="skill service-item" style={buttonContainer}>
-              <GitHubIcon className="project-btns" />
-              <div className="skillName">
-                <p style={buttonTextStyle}>Repo</p>
-              </div>
-            </div>
-            <div className="skill service-item" style={buttonContainer}>
+            {project.live !== null && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <LaunchIcon className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Live</p>
+                  </div>
+                </div>
+              </a>
+            )}
+
+            {project.repo !== null && (
+              <a href={project.repo} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <GitHubIcon className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Repo</p>
+                  </div>
+                </div>
+              </a>
+            )}
+
+            {project.video !== null && (
+              <a href={project.video} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <VideoCameraBackRounded className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Video</p>
+                  </div>
+                </div>
+              </a>
+            )}
+
+            <div
+              className="skill service-item"
+              style={buttonContainer}
+              onClick={handleReadMoreDialogOpen}
+            >
               <MoreHorizIcon className="project-btns" />
               <div className="skillName">
                 <p style={buttonTextStyle}>More</p>
@@ -135,6 +158,7 @@ function ProjectItem({ index, project }) {
         maxWidth="md"
         PaperProps={{
           style: {
+            overflowX: "hidden",
             borderRadius: "1.5rem",
             backdropFilter: "blur(20px)",
             background: "rgba(0, 0, 0, 0.6)",
@@ -221,6 +245,50 @@ function ProjectItem({ index, project }) {
           <Divider />
           <Divider />
 
+          <div
+            className="skillBox hidden"
+            style={{
+              marginTop: "4rem",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              gap: "1rem",
+            }}
+          >
+            {project.live !== null && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <LaunchIcon className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Live</p>
+                  </div>
+                </div>
+              </a>
+            )}
+
+            {project.repo !== null && (
+              <a href={project.repo} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <GitHubIcon className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Repo</p>
+                  </div>
+                </div>
+              </a>
+            )}
+
+            {project.video !== null && (
+              <a href={project.video} target="_blank" rel="noopener noreferrer">
+                <div className="skill service-item" style={buttonContainer}>
+                  <VideoCameraBackRounded className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Video</p>
+                  </div>
+                </div>
+              </a>
+            )}
+          </div>
+
           <Typography variant="h2" gutterBottom sx={{ marginTop: "2rem" }}>
             <Box sx={{ whiteSpace: "pre-wrap" }}>
               <Typography
@@ -231,8 +299,9 @@ function ProjectItem({ index, project }) {
                   fontSize: { xs: ".9rem", lg: "1.2rem" },
                   lineHeight: "1.5",
                 }}
-                dangerouslySetInnerHTML={{ __html: `${project.desc}` }}
-              />
+              >
+                {project.desc}
+              </Typography>
             </Box>
           </Typography>
         </DialogContent>

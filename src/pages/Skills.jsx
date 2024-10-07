@@ -2,7 +2,6 @@ import React from "react";
 import {
   backendSkillsData,
   frontendSkillsData,
-  librarySkillsData,
   programmingLangSkillsData,
 } from "../data/skills";
 import SkillsItems from "../components/SkillsItems";
@@ -89,7 +88,6 @@ function Skills() {
 
       <SkillsItems title="Frontend" skillsData={frontendSkillsData} />
       <SkillsItems title="Backend" skillsData={backendSkillsData} />
-      <SkillsItems title="Library/Framework" skillsData={librarySkillsData} />
       <SkillsItems
         title="Programming Languages"
         skillsData={programmingLangSkillsData}

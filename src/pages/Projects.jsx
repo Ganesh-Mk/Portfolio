@@ -3,6 +3,8 @@ import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { projects, categories } from "../data/projectsData";
 
 import ProjectItem from "../components/ProjectItem";
+import { images } from "../Images";
+import { Box } from "@mui/material";
 
 function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -74,11 +76,32 @@ function Projects() {
           )}
         </div>
 
-        <ul className="project-list">
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+            gap: "1.8rem",
+          }}
+        >
+          {activeCategory === "App Development" && (
+            <div
+              style={{ display: "grid", placeItems: "center", width: "100%" }}
+            >
+              <p style={{ fontSize: "1.2rem", margin: "1rem", color: "white" }}>
+                App Project is on the process...
+              </p>
+              <img
+                style={{ borderRadius: "2rem" }}
+                src={images.laptopCat}
+                alt=""
+              />
+            </div>
+          )}
+
           {filteredProjects.map((project, index) => (
             <ProjectItem key={index} project={project} />
           ))}
-        </ul>
+        </Box>
       </section>
     </article>
   );

@@ -10,7 +10,7 @@ function AchievementItem({ image = "", date = "", title = "", desc = "" }) {
 
         <div className="blog-content">
           <div className="blog-meta">
-            <p className="blog-category">Date: </p>
+            <p className="blog-category">Date </p>
 
             <span className="dot"></span>
 
