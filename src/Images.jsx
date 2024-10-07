@@ -77,8 +77,12 @@ import hangmangame3 from "./assets/projects/hangmangame3.png";
 
 import laptopCat from "./assets/images/laptop-cat.gif";
 import second from "./assets/achievements/second.jpg";
+import bgmBestDev from "./assets/achievements/bgmBestDev.jpg";
+import chikodi1st from "./assets/achievements/chikodi1st.jpg";
 
 export const images = {
+  chikodi1st,
+  bgmBestDev,
   second,
   laptopCat,
   myAvatar,
