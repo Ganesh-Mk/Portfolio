@@ -19,38 +19,36 @@ function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
 
   return (
     <li className="blog-post-item">
-      <a href="#">
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img
-                src={image}
-                alt="image1"
-                style={{
-                  borderRadius: "1rem",
-                  maxWidth: "90%",
-                  maxHeight: "20rem",
-                  margin: "0 auto",
-                  marginTop: "1.3rem",
-                }}
-              />
-            </div>
-          ))}
-        </Slider>
-
-        <div className="blog-content" style={{ marginTop: "1rem" }}>
-          <div className="blog-meta">
-            <p className="blog-category">Date </p>
-
-            <span className="dot"></span>
-
-            <time dateTime="2022-02-23">{date}</time>
+      <Slider {...settings} style={{ cursor: "grab" }}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={image}
+              alt="image1"
+              style={{
+                borderRadius: "1rem",
+                maxWidth: "90%",
+                maxHeight: "20rem",
+                margin: "0 auto",
+                marginTop: "1.3rem",
+              }}
+            />
           </div>
+        ))}
+      </Slider>
 
-          <h3 className="h3 blog-item-title">{title}</h3>
-          <p className="blog-text">{desc}</p>
+      <div className="blog-content" style={{ marginTop: "1rem" }}>
+        <div className="blog-meta">
+          <p className="blog-category">Date </p>
+
+          <span className="dot"></span>
+
+          <time dateTime="2022-02-23">{date}</time>
         </div>
-      </a>
+
+        <h3 className="h3 blog-item-title">{title}</h3>
+        <p className="blog-text">{desc}</p>
+      </div>
     </li>
   );
 }

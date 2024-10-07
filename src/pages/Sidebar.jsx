@@ -21,7 +21,12 @@ function Sidebar() {
     <aside className={openContent ? "sidebar active" : "sidebar"} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src={images.avatar1} alt="Richard hanrick" width="80" />
+          <img
+            style={{ borderRadius: "1rem" }}
+            src={images.profile}
+            alt="Richard hanrick"
+            width="80"
+          />
         </figure>
 
         <div className="info-content">

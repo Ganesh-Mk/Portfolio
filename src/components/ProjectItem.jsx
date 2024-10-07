@@ -88,7 +88,12 @@ function ProjectItem({ index, project }) {
             <img src={project.images[0]} alt={project.alt} loading="lazy" />
           </figure>
 
-          <h3 className="project-title">{project.title}</h3>
+          <h3
+            className="project-title"
+            style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+          >
+            {project.title}
+          </h3>
           <div style={{ maxHeight: "4rem", overflow: "hidden" }}>
             <p className="project-category">{project.desc}</p>
           </div>
