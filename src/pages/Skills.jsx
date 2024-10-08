@@ -60,7 +60,9 @@ function Skills() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Core Subject - OS, CN, DBMS, DAA</h5>
+              <h5 className="h5">
+                Core Subjects - OS, CN, DBMS, SDE, CyberSecurity
+              </h5>
             </div>
 
             <div className="skill-progress-bg">
@@ -73,7 +75,7 @@ function Skills() {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Data Structure and Algorithm</h5>
+              <h5 className="h5">Problem Solving / DSA</h5>
             </div>
 
             <div className="skill-progress-bg">

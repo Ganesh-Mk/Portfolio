@@ -25,6 +25,7 @@ function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
             <img
               src={image}
               alt="image1"
+              lazyLoad="true"
               style={{
                 borderRadius: "1rem",
                 maxWidth: "90%",

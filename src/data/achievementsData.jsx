@@ -84,12 +84,12 @@ export const achievementData = [
     title: "#2 in Inter-KLE Coding competition",
     date: "May 31, 2023",
     desc: `Organized by B.K BCA College Chikodi, Our whole team combined efforts led us to earning Runner up General Championship `,
-    images: [images.chikodi2ndCerti, images.chikodi2ndSemGroupPhoto],
+    images: [images.chikodi2ndSemGroupPhoto, images.chikodi2ndCerti],
   },
   {
     title: "Runner up in Inter-KLE Coding competition",
     date: "May 13, 2023",
-    desc: `Organized by G.I Bagewadi BCA College Nipani, Our whole team combined efforts led us to earning Runner up General Championship `,
+    desc: `Organized by G.I Bagewadi BCA College Nipani, Our whole team combined efforts led us to earning General Championship `,
     images: [
       images.nipaniGroupPhoto,
       images.nipaniGroupPhoto2,

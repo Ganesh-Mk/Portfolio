@@ -135,7 +135,44 @@ import uipathClass from "./assets/achievements/uipathClass.jpg";
 import vencer1stCerti from "./assets/achievements/vencer1stCerti.jpg";
 import vencerWon from "./assets/achievements/vencerWon.jpg";
 
+import animal1 from "./assets/projects/animal1.png";
+import animal2 from "./assets/projects/animal2.png";
+import animal3 from "./assets/projects/animal3.png";
+import spacex1 from "./assets/projects/spacex1.png";
+import spacex2 from "./assets/projects/spacex2.png";
+import spacex3 from "./assets/projects/spacex3.png";
+import spacex4 from "./assets/projects/spacex4.png";
+import spacex5 from "./assets/projects/spacex5.png";
+import spacex6 from "./assets/projects/spacex6.png";
+
+import chatapp1 from "./assets/projects/chatapp1.png";
+import chatapp2 from "./assets/projects/chatapp2.png";
+import chatapp3 from "./assets/projects/chatpp3.png";
+import chatapp4 from "./assets/projects/chatapp4.png";
+
+import pokemon1 from "./assets/projects/pokemon1.png";
+import pokemon2 from "./assets/projects/pokemon2.png";
+import pokemon3 from "./assets/projects/pokemon3.png";
+import pokemon4 from "./assets/projects/pokemon4.png";
+
 export const images = {
+  pokemon1,
+  pokemon2,
+  pokemon3,
+  pokemon4,
+  chatapp1,
+  chatapp4,
+  chatapp2,
+  chatapp3,
+  spacex1,
+  spacex2,
+  spacex3,
+  spacex4,
+  spacex5,
+  spacex6,
+  animal1,
+  animal2,
+  animal3,
   chikodi1st,
   bgmBestDev,
   laptopCat,
