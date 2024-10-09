@@ -2004,7 +2004,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .css-wkv7oa-MuiPaper-root-MuiDialog-paper {
   width: 100% !important;
-  margin: 10px !important;
+  margin: 0px !important;
 }
 
 .slick-track{

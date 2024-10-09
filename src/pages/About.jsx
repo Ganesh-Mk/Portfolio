@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TimeLine from "../components/TimeLine";
 import { educationData } from "../data/education";
 import { experienceData } from "../data/experience";
@@ -6,6 +6,9 @@ import ServiceItems from "../components/ServiceItems";
 import { servicesData } from "../data/serviceItems";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <article className="about  active" data-page="about">
       <header>
@@ -16,7 +19,8 @@ function About() {
         <p>
           A dedicated developer with experience in both web and app development,
           specializing in full-stack projects. I have a strong foundation in
-          problem-solving, enhanced by my work on DSA challenges.
+          problem-solving. I am currently pursuing my 5th semester of BCA at KLE
+          Society's College of BCA, Gokak.
         </p>
 
         <p>

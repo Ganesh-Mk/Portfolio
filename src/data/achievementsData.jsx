@@ -18,19 +18,7 @@ export const achievementData = [
       images.mahalingpur1stCerti,
     ],
   },
-  {
-    title: "Won 1st prize in a web-design competition ",
-    date: "July 16, 2024",
-    desc: `In inter-KLE event hosted by KLE BCA Chikodi. 
-    Our whole team combined efforts led us to earning General Championship`,
-    images: [
-      images.chikodiSolo,
-      images.chikodiDuo,
-      images.chikodiGroup,
-      images.chikodiAwards,
-      images.chikodi1stCert,
-    ],
-  },
+
   {
     title: "1st prize in a web-design competition ",
     date: "July 13, 2024",
@@ -49,6 +37,17 @@ export const achievementData = [
     images: [images.vencerWon, images.vencer1stCerti],
   },
   {
+    title: "Victory at National Level Web Dev Competition",
+    date: "14 to 16 Dec, 2023",
+    desc: `At National Level Event Techno-Cultural Fest Savishkar Hosted by Jain College of Engineering and Research, Belgaum, Earning a prize of Rs.1500/-`,
+    images: [
+      images.savishkarWon,
+      images.savishkarTeam,
+      images.savishkarAward,
+      images.savishkarCerti,
+    ],
+  },
+  {
     title: "Runner up National Level Coding Competition",
     date: "29 Feb and 1 March, 2024",
     desc: `Hosted by KLE CET College, Chikodi! Grateful for the recognition and the 2000₹ cash prize. Special shoutout to my friend Tej Hagargi for his valuable contributions!`,
@@ -58,6 +57,7 @@ export const achievementData = [
       images.praxis2ndCert,
     ],
   },
+
   {
     title: "3rd Prize in National Level Hackathon",
     date: "Feb 16, 2024",
@@ -70,16 +70,19 @@ export const achievementData = [
     ],
   },
   {
-    title: "Victory at National Level Web Dev Competition",
-    date: "14 to 16 Dec, 2023",
-    desc: `At National Level Event Techno-Cultural Fest Savishkar Hosted by Jain College of Engineering and Research, Belgaum, Earning a prize of Rs.1500/-`,
+    title: "Won 1st prize in a web-design competition ",
+    date: "July 16, 2024",
+    desc: `In inter-KLE event hosted by KLE BCA Chikodi. 
+    Our whole team combined efforts led us to earning General Championship`,
     images: [
-      images.savishkarWon,
-      images.savishkarTeam,
-      images.savishkarAward,
-      images.savishkarCerti,
+      images.chikodiSolo,
+      images.chikodiDuo,
+      images.chikodiGroup,
+      images.chikodiAwards,
+      images.chikodi1stCert,
     ],
   },
+
   {
     title: "#2 in Inter-KLE Coding competition",
     date: "May 31, 2023",
@@ -94,6 +97,36 @@ export const achievementData = [
       images.nipaniGroupPhoto,
       images.nipaniGroupPhoto2,
       images.nipani2ndCerti,
+    ],
+  },
+  {
+    title: "Academic Ranking",
+    date: "2023 - 25",
+    desc: `Secured 1st place in the 1st and 2nd semesters, and 3rd place in the 3rd semester. Awaiting results for the upcoming semesters.`,
+    images: [
+      images.firstSemRankPoster,
+      images.secondSemRankPoster,
+      images.thirdSemRankPoster,
+    ],
+  },
+
+  {
+    title: "UiPath Student Developer Champion",
+    date: "July - Nov, 2024",
+    desc: `Selected as a UiPath Student Developer Champion after clearing multiple interview rounds. Responsible for organizing sessions to guide juniors in exploring UiPath, its courses, and learning about AI and automation. Along with my team, I led various sessions and successfully organized the Hack-a-Bot competition, sponsored by the UiPath community`,
+    images: [images.uipath1, images.uipath2, images.uipath3, images.uipath4],
+  },
+  {
+    title: "Other Achievements ",
+    date: "2020 - 25",
+    desc: `Secured top ranks in various class activity, inHouse event. including 1st place in coding (twice), 1st in PPT presentation, 2nd in drawing, 1st in logo design, and 1st in gaming, multiple drawing awards in school, Also honored with 'Best Boy'`,
+    images: [
+      images.otherAwards,
+      images.classActivity1stCodingAward,
+      images.classActivity2ndLogoAward,
+      images.specialAchieve2ndSem,
+      images.specialAchievement4thAward,
+      images.thirdSemTopper,
     ],
   },
 ];

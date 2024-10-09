@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AchievementItem from "../components/AchievementItem";
 import { achievementData } from "../data/achievementsData";
 import { ImageList, ImageListItem } from "@mui/material";
@@ -7,6 +7,9 @@ import { useMediaQuery } from "@mui/material";
 function Achievements() {
   // Use useMediaQuery to determine if the screen size is mobile
   const isMobile = useMediaQuery("(max-width: 900px)");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <article className="blog active" data-page="blog">
@@ -15,7 +18,7 @@ function Achievements() {
       </header>
 
       <ImageList variant="masonry" cols={isMobile ? 1 : 2} gap={"1.7rem"}>
-        {achievementData.map((data) => (
+        {achievementData.map((data, index) => (
           <ImageListItem key={data.title}>
             <AchievementItem
               images={data.images}

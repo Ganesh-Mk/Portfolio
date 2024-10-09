@@ -133,7 +133,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
       images.pokemon1,
       images.pokemon2,
       images.pokemon3,
-      images.pokemon14,
+      images.pokemon4,
     ],
     live: "https://pokemonwar.vercel.app/",
     repo: "https://github.com/Ganesh-Mk/PokemonGame",
@@ -145,12 +145,27 @@ A responsive cat-themed website built using React.js, inspired by the official S
     
     I just enjoyed while implementing this project. Playing our own games is different kind of fun😂`,
   },
+  {
+    title: "My Old Portfolio & Mini Projects",
+    category: "Web Development",
+    images: [
+      images.oldPortfolio1,
+      images.oldPortfolio2,
+      images.oldPortfolio3,
+      images.oldPortfolio4,
+    ],
+    live: "https://ganesh-mk.github.io/Old-Portfolio/",
+    repo: "https://github.com/Ganesh-Mk/Old-Portfolio",
+    video: `https://drive.google.com/file/d/1uIJoanyrGKGjHDVaEGo_8PgjlJ8lA1sh/view?usp=sharing`,
+    alt: "Project image",
+    desc: `I created these website around 2 years ago, showcasing my skills and mini projects from that time. It served as a portfolio to demonstrate my early web development experience.`,
+  },
 
   // App Development
 
   // Console Applications
   {
-    title: "Hang Man Game",
+    title: "Hang Man Game - Java",
     category: "Console Applications",
     images: [images.hangmangame1, images.hangmangame2, images.hangmangame3],
     alt: "Project image",
@@ -158,6 +173,28 @@ A responsive cat-themed website built using React.js, inspired by the official S
     video:
       "https://drive.google.com/file/d/1PzoWN8TFadwkz16xXSkfIRC8gD2MEztD/view?usp=sharing",
     repo: null,
-    desc: "Crafted HangManGame using Java with dynamic words and it's length. ",
+    desc: `While learning Java, I built this game. The game dynamically selects words of varying lengths for the player to guess, offering an engaging challenge. Players attempt to guess the word letter by letter, with each incorrect guess bringing them closer to "hanging" the character`,
+  },
+  {
+    title: "Guess Game - C",
+    category: "Console Applications",
+    images: [images.guessGame1, images.guessGame2, images.guessGame3],
+    alt: "Project image",
+    live: null,
+    video:
+      "https://drive.google.com/file/d/1i_Ny5FOvdI2jPe84RxatRcKpvhB2oZOo/view?usp=sharing",
+    repo: null,
+    desc: "This is a simple number guessing game during my first semester while learning C. The player guesses a random number, and the game gives hints if it's higher or lower. It also stores the highest score using a file system",
+  },
+  {
+    title: "Tic-Tac-Toe - Python",
+    category: "Console Applications",
+    images: [images.tictactoe1, images.tictactoe2],
+    alt: "Project image",
+    live: null,
+    video:
+      "https://drive.google.com/file/d/187SHxy9pKvTftp9akpyGZvxP6egsrbQm/view?usp=sharing",
+    repo: null,
+    desc: "This is a classic Tic Tac Toe game I built while learning Python. It allows two players to take turns placing their marks on a 3x3 grid, with the game detecting a win or draw after each move.",
   },
 ];

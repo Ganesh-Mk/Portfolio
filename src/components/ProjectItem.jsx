@@ -50,7 +50,7 @@ function ProjectItem({ index, project }) {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
@@ -191,6 +191,7 @@ function ProjectItem({ index, project }) {
               fontSize: { xs: "2rem", lg: "2.4rem" },
               paddingRight: "2.2rem",
               color: "white",
+              fontWeight: "bold",
               fontFamily: "poppins",
             }}
           >

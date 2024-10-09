@@ -19,22 +19,24 @@ function TimeLine({ title, educationData }) {
             <p className="timeline-text">{item.description}</p>
             <br />
             <div className="blog-meta">
-              <p className="blog-category">Period: </p>
+              <p className="blog-category">Period </p>
               <span className="dot"></span>
               <span dateTime="2022-02-23">{item.period}</span>
             </div>
             {item.percentage !== undefined && (
               <div className="blog-meta">
-                <p className="blog-category">Percentage: </p>
+                <p className="blog-category">Percentage </p>
                 <span className="dot"></span>
                 <span dateTime="2022-02-23">{item.percentage}</span>
               </div>
             )}
-            {item.workPlace !== undefined && (
+            {item.workMode !== undefined && item.location !== undefined && (
               <div className="blog-meta">
-                <p className="blog-category">Work Place: </p>
+                <p className="blog-category">Location: </p>
                 <span className="dot"></span>
-                <span dateTime="2022-02-23">{item.workPlace}</span>
+                <span dateTime="2022-02-23">{item.workMode}</span>
+                <span className="dot"></span>
+                <span dateTime="2022-02-23">{item.location}</span>
               </div>
             )}
           </li>

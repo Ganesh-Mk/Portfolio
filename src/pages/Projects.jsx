@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { projects, categories } from "../data/projectsData";
 
@@ -9,6 +9,9 @@ import { Box } from "@mui/material";
 function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const handleCategoryClick = (category) => {
     setIsDropdownOpen(!isDropdownOpen);
     setActiveCategory(category);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import {
   GitHub,
@@ -9,6 +9,9 @@ import {
 } from "@mui/icons-material";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <article className="contact active" data-page="contact">
       <header>

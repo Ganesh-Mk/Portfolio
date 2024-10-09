@@ -131,7 +131,10 @@ import techVentureGroupPhoto2 from "./assets/achievements/techVentureGroupPhoto2
 import thirdAcademyRankCerti from "./assets/achievements/thirdAcademyRankCerti.jpg";
 import thirdSemRankPoster from "./assets/achievements/thirdSemRankPoster.jpg";
 import thirdSemTopper from "./assets/achievements/thirdSemTopper.jpg";
-import uipathClass from "./assets/achievements/uipathClass.jpg";
+import uipath1 from "./assets/achievements/uipath1.jpg";
+import uipath2 from "./assets/achievements/uipath2.jpg";
+import uipath3 from "./assets/achievements/uipath3.jpg";
+import uipath4 from "./assets/achievements/uipath4.jpg";
 import vencer1stCerti from "./assets/achievements/vencer1stCerti.jpg";
 import vencerWon from "./assets/achievements/vencerWon.jpg";
 
@@ -155,7 +158,35 @@ import pokemon2 from "./assets/projects/pokemon2.png";
 import pokemon3 from "./assets/projects/pokemon3.png";
 import pokemon4 from "./assets/projects/pokemon4.png";
 
+import oldPortfolio1 from "./assets/projects/oldPortfolio1.png";
+import oldPortfolio2 from "./assets/projects/oldPortfolio2.png";
+import oldPortfolio3 from "./assets/projects/oldPortfolio3.png";
+import oldPortfolio4 from "./assets/projects/oldPortfolio4.png";
+
+import guessGame1 from "./assets/projects/guessGame1.png";
+import guessGame2 from "./assets/projects/guessGame2.png";
+import guessGame3 from "./assets/projects/guessGame3.png";
+
+import tictactoe1 from "./assets/projects/tictactoe1.png";
+import tictactoe2 from "./assets/projects/tictactoe2.png";
+
+import specialAchievement4thAward from "./assets/achievements/specialAchievement4thAward.jpg";
+
 export const images = {
+  uipath1,
+  uipath2,
+  uipath3,
+  uipath4,
+  specialAchievement4thAward,
+  tictactoe1,
+  tictactoe2,
+  guessGame1,
+  guessGame2,
+  guessGame3,
+  oldPortfolio1,
+  oldPortfolio2,
+  oldPortfolio3,
+  oldPortfolio4,
   pokemon1,
   pokemon2,
   pokemon3,
@@ -254,7 +285,6 @@ export const images = {
   specialAchievement2ndSem,
   specialAchievement4thSem,
   thirdAcademyRankCerti,
-  uipathClass,
   vencer1stCerti,
   vencerWon,
   bgmBestDevAward,

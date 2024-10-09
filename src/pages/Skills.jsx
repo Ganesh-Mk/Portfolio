@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   backendSkillsData,
   frontendSkillsData,
@@ -7,6 +7,9 @@ import {
 import SkillsItems from "../components/SkillsItems";
 
 function Skills() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <article className="skills active" data-page="skills">
       <header>
@@ -40,7 +43,7 @@ function Skills() {
             <div className="skill-progress-bg">
               <div
                 className="skill-progress-fill"
-                style={{ width: "80%" }}
+                style={{ width: "85%" }}
               ></div>
             </div>
           </li>
@@ -81,7 +84,7 @@ function Skills() {
             <div className="skill-progress-bg">
               <div
                 className="skill-progress-fill"
-                style={{ width: "60%" }}
+                style={{ width: "70%" }}
               ></div>
             </div>
           </li>
