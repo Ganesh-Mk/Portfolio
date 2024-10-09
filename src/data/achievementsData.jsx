@@ -4,7 +4,7 @@ export const achievementData = [
   {
     title: "Winner of Belgaum's Best Developer Award 2023",
     date: "December 1, 2023",
-    desc: "Solo Hackathon - DEV FEST organized by Google Developer Groups. Ranked 1st out of 70+ participants.",
+    desc: "Solo Hackathon - DEV FEST organized by Google Developer Groups. Ranked 1st out of 170+ participants.",
     images: [images.bgmBestDev, images.bgmBestDevAward, images.bgmBestDevCerti],
   },
   {
@@ -50,7 +50,7 @@ export const achievementData = [
   {
     title: "Runner up National Level Coding Competition",
     date: "29 Feb and 1 March, 2024",
-    desc: `Hosted by KLE CET College, Chikodi! Grateful for the recognition and the 2000₹ cash prize. Special shoutout to my friend Tej Hagargi for his valuable contributions!`,
+    desc: `Hosted by KLE CET College, Chikodi! Grateful for the recognition and the 2000₹ cash prize. Thanks to my friend for his valuable contributions!`,
     images: [
       images.chikodi2ndDuo,
       images.chikodi2ndGroup,
@@ -61,7 +61,7 @@ export const achievementData = [
   {
     title: "3rd Prize in National Level Hackathon",
     date: "Feb 16, 2024",
-    desc: `Techventure Fiesta 2024 hosted by Jain College of Engineering Belgavi`,
+    desc: `In the Techventure Fiesta 2024 hosted by Jain College of Engineering, Belagavi, where we created a project to help children learn programming concepts`,
     images: [
       images.techVentureGroupPhoto2,
       images.techVentureGroupPhoto1,
@@ -113,7 +113,7 @@ export const achievementData = [
   {
     title: "UiPath Student Developer Champion",
     date: "July - Nov, 2024",
-    desc: `Selected as a UiPath Student Developer Champion after clearing multiple interview rounds. Responsible for organizing sessions to guide juniors in exploring UiPath, its courses, and learning about AI and automation. Along with my team, I led various sessions and successfully organized the Hack-a-Bot competition, sponsored by the UiPath community`,
+    desc: `Selected as a UiPath Student Developer Champion after clearing multiple interview rounds. Responsible for organizing sessions to guide juniors in exploring UiPath, its courses, and learning about AI and automation. Along with my team, We led various sessions and successfully organized the Hack-a-Bot competition, sponsored by the UiPath community`,
     images: [images.uipath1, images.uipath2, images.uipath3, images.uipath4],
   },
   {

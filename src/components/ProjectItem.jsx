@@ -13,7 +13,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 import {
-  LinkedIn,
   VideoCameraBackRounded,
   VisibilityOutlined,
 } from "@mui/icons-material";

@@ -66,6 +66,30 @@ This Coding Problem-Solving Platform is a full-stack website where users can pra
     desc: `Fully responsive SpaceX website using HTML, CSS, JS, GSAP, and Locomotive. ✨ Check out the creative animations and seamless responsiveness, even optimized for smartwatches! 🌐`,
   },
   {
+    title: "Nitai Innovations - Startup Company Official Website",
+    category: "Web Development",
+    images: [
+      images.nitai1,
+      images.nitai2,
+      images.nitai3,
+      images.nitai4,
+      images.nitai5,
+      images.nitai6,
+    ],
+    live: "https://nitaiinnovations.netlify.app/",
+    repo: "https://github.com/Ganesh-Mk/nitaiinnovations",
+    video: `https://drive.google.com/file/d/1fWX45_a2-3GyAdcR5byJcI-pHduSTgG-/view?usp=sharing`,
+    alt: "Project image",
+    desc: `Built the official website for an internship startup using the MERN stack. The site features company information, reusable components, user authentication, blog CRUD functionality, and account management, with a responsive design and light/dark theme support. It will be soon hosted live at www.nitaiinnovations.com."
+    
+    💻 Tech Stack: 
+    -> Frontend: React, Redux, Material-UI
+    -> Backend: Node.js, Express.js
+    -> Database: MongoDB
+    `,
+  },
+
+  {
     title: "Simon's Cat",
     category: "Web Development",
     images: [images.meaw1, images.meaw2, images.meaw3, images.meaw4],

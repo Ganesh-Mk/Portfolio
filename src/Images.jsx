@@ -172,7 +172,20 @@ import tictactoe2 from "./assets/projects/tictactoe2.png";
 
 import specialAchievement4thAward from "./assets/achievements/specialAchievement4thAward.jpg";
 
+import nitai1 from "./assets/projects/nitai1.png";
+import nitai2 from "./assets/projects/nitai2.png";
+import nitai3 from "./assets/projects/nitai3.png";
+import nitai4 from "./assets/projects/nitai4.png";
+import nitai5 from "./assets/projects/nitai5.png";
+import nitai6 from "./assets/projects/nitai6.png";
+
 export const images = {
+  nitai1,
+  nitai2,
+  nitai3,
+  nitai4,
+  nitai5,
+  nitai6,
   uipath1,
   uipath2,
   uipath3,

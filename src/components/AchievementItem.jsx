@@ -11,7 +11,6 @@ function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 1000,
     arrows: false,
     cssEase: "ease",
     pauseOnHover: false,

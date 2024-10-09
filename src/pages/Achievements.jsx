@@ -5,7 +5,6 @@ import { ImageList, ImageListItem } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 
 function Achievements() {
-  // Use useMediaQuery to determine if the screen size is mobile
   const isMobile = useMediaQuery("(max-width: 900px)");
   useEffect(() => {
     window.scrollTo(0, 0);
