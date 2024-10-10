@@ -109,6 +109,12 @@ export const achievementData = [
       images.thirdSemRankPoster,
     ],
   },
+  {
+    title: "Leetcode Profile",
+    date: "Jan - present, 2024",
+    desc: `Reached 300+ LeetCode problems! Although I've lost some consistency in daily problem-solving due to focusing on development, but it's all part of the learning journey. Still more to go 💫`,
+    images: [images.leetcode1, images.leetcode2],
+  },
 
   {
     title: "UiPath Student Developer Champion",

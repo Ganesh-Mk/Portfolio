@@ -13,6 +13,8 @@ import react from "./assets/skillIcons/Reactjs-2.png";
 import nextjs from "./assets/skillIcons/nextjs.png";
 import redux from "./assets/skillIcons/redux.png";
 import github from "./assets/skillIcons/github.png";
+import leetcode1 from "./assets/achievements/leetcode.jpg";
+import leetcode2 from "./assets/achievements/leetcode2.png";
 
 import logo from "./assets/images/logo.svg";
 import webdev from "./assets/images/webdev.png";
@@ -260,6 +262,8 @@ export const images = {
   appdev,
   dsa,
   dsaIcon,
+  leetcode1,
+  leetcode2,
   expo,
   nodejs,
   expressjs,
