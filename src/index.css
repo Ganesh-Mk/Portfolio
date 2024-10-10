@@ -2018,3 +2018,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 .slick-prev{
   left: -10px !important;
 }
+
+/* Dialog Box */
+.css-oo99rd{
+  width: 95vw !important;
+  margin: 0 !important;
+}
