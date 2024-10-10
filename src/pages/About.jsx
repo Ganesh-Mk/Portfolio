@@ -4,6 +4,7 @@ import { educationData } from "../data/education";
 import { experienceData } from "../data/experience";
 import ServiceItems from "../components/ServiceItems";
 import { servicesData } from "../data/serviceItems";
+import { Button } from "@mui/material";
 
 function About() {
   useEffect(() => {
@@ -30,6 +31,31 @@ function About() {
           practices. Let's create something amazing together!
         </p>
       </section>
+
+      <a
+        href="https://drive.google.com/file/d/1cjtEsamgkqW-lJ76crkDNU9JO6wwdbmy/view"
+        target="_blank"
+      >
+        <Button
+          variant="outlined"
+          size="large"
+          sx={{
+            color: "white",
+            width: {
+              xs: "100%",
+              md: "15rem",
+            },
+            margin: "0 0 2rem 0",
+            fontWeight: "bold",
+            textTransform: "capitalize",
+            borderRadius: "1rem",
+            cursor: "pointer",
+            border: "1px solid #FFDB70",
+          }}
+        >
+          View Resume
+        </Button>
+      </a>
 
       {/* service */}
       <section className="service">

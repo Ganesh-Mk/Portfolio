@@ -31,12 +31,22 @@ function TimeLine({ title, educationData }) {
               </div>
             )}
             {item.workMode !== undefined && item.location !== undefined && (
-              <div className="blog-meta">
-                <p className="blog-category">Location: </p>
-                <span className="dot"></span>
-                <span dateTime="2022-02-23">{item.workMode}</span>
-                <span className="dot"></span>
-                <span dateTime="2022-02-23">{item.location}</span>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "flex-start",
+                }}
+              >
+                <div className="blog-meta">
+                  <p className="blog-category">Location: </p>
+                  <span className="dot"></span>
+                  <span dateTime="2022-02-23">{item.workMode}</span>
+                  <span className="dot"></span>
+                </div>
+                <span style={{ marginLeft: "0.5rem" }} dateTime="2022-02-23">
+                  {item.location}
+                </span>
               </div>
             )}
           </li>
