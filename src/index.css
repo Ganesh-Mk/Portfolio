@@ -99,6 +99,21 @@
 }
 
 
+html{
+  height: 100vh;
+}
+
+.sidebar{
+  overflow: scroll;
+  max-height: 93vh;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
 
 .slick-dots li button:before {
   color: white !important;  /* Change dot color to white */
@@ -1788,6 +1803,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1250px) {
+  
 
   /**
    * RESET
@@ -1846,15 +1862,16 @@ textarea.form-input::-webkit-resizer { display: none; }
    * SIDEBAR
    */
 
-  .sidebar {
+   .sidebar {
     position: sticky;
     top: 40px;
     max-height: max-content;
-    height: 100%;
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
-  }
+    overflow: scroll;
+    height: 97vh;
+}
 
   .sidebar-info { flex-direction: column; }
 
@@ -2023,4 +2040,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 .css-oo99rd{
   width: 95vw !important;
   margin: 0 !important;
+}
+
+
+
+
+.card {
+  width: 80%;
+  margin: auto;
+  background: transparent;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+
+.card.is-loading .image {
+    background: #eee;
+    background: linear-gradient(110deg, #2a2a2a 8%, #3a3a3a 18%, #2a2a2a 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+  }
+
+  .card.is-loading  .image {
+    height: 18rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
 }

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
+  const [loading, setLoading] = useState(Array(images.length).fill(true));
+
+  const handleImageLoad = (index) => {
+    setLoading((prevLoading) => {
+      const updatedLoading = [...prevLoading];
+      updatedLoading[index] = false;
+      return updatedLoading;
+    });
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -20,17 +30,27 @@ function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
     <li className="blog-post-item">
       <Slider {...settings} style={{ cursor: "grab" }}>
         {images.map((image, index) => (
-          <div key={index}>
+          <div key={index} style={{ position: "relative" }}>
+            {loading[index] && (
+              <div class="card is-loading">
+                <div class="image"></div>
+                <div class="content">
+                  <h2></h2>
+                  <p></p>
+                </div>
+              </div>
+            )}
             <img
               src={image}
-              alt="image1"
-              lazyLoad="true"
+              alt={`Slide ${index + 1}`}
+              onLoad={() => handleImageLoad(index)}
               style={{
                 borderRadius: "1rem",
                 maxWidth: "90%",
                 maxHeight: "20rem",
                 margin: "0 auto",
                 marginTop: "1.3rem",
+                display: loading[index] ? "none" : "block",
               }}
             />
           </div>
@@ -40,9 +60,7 @@ function AchievementItem({ images = [], date = "", title = "", desc = "" }) {
       <div className="blog-content" style={{ marginTop: "1rem" }}>
         <div className="blog-meta">
           <p className="blog-category">Date </p>
-
           <span className="dot"></span>
-
           <time dateTime="2022-02-23">{date}</time>
         </div>
 
