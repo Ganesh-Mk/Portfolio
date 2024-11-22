@@ -86,21 +86,6 @@ function Projects() {
             gap: "1.8rem",
           }}
         >
-          {activeCategory === "App Development" && (
-            <div
-              style={{ display: "grid", placeItems: "center", width: "100%" }}
-            >
-              <p style={{ fontSize: "1.2rem", margin: "1rem", color: "white" }}>
-                App Project is on the process...
-              </p>
-              <img
-                style={{ borderRadius: "2rem" }}
-                src={images.laptopCat}
-                alt=""
-              />
-            </div>
-          )}
-
           {filteredProjects.map((project, index) => (
             <ProjectItem key={index} project={project} />
           ))}
