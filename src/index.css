@@ -973,6 +973,10 @@ main {
   overflow: hidden;
   margin-bottom: 15px;
   padding: 1rem 0;
+  max-height: 15rem;
+  background-clip: content-box;
+  display: grid;
+  place-content: center;
 }
 
 .project-img::before {

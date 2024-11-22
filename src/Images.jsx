@@ -181,7 +181,20 @@ import nitai4 from "./assets/projects/nitai4.png";
 import nitai5 from "./assets/projects/nitai5.png";
 import nitai6 from "./assets/projects/nitai6.png";
 
+import memecats0 from "./assets/projects/memecats0.png";
+import memecats1 from "./assets/projects/memecats1.jpg";
+import memecats2 from "./assets/projects/memecats2.jpg";
+import memecats3 from "./assets/projects/memecats3.jpg";
+import memecats4 from "./assets/projects/memecats4.jpg";
+import memecats5 from "./assets/projects/memecats5.jpg";
+
 export const images = {
+  memecats0,
+  memecats1,
+  memecats2,
+  memecats3,
+  memecats4,
+  memecats5,
   nitai1,
   nitai2,
   nitai3,

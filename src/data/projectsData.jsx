@@ -7,10 +7,51 @@ export const categories = [
 ];
 
 export const projects = [
+  // App Development
+  {
+    title: "MemeCats",
+    category: "App Development",
+    images: [
+      images.memecats0,
+      images.memecats1,
+      images.memecats2,
+      images.memecats3,
+      images.memecats4,
+      images.memecats5,
+    ],
+    download: "https://expo.dev/artifacts/eas/oS5k1gsQEyaKUaFxft3Qxf.apk",
+    live: null,
+    repo: "https://github.com/Ganesh-Mk/MemeCats",
+    video:
+      "https://www.linkedin.com/posts/ganesh-koparde_memecats-a-fun-cat-themed-full-stack-activity-7265717589362765824-o6QS?utm_source=share&utm_medium=member_desktop",
+    alt: "Project image",
+    desc: `😻 MemeCats - A fun, cat-themed full-stack app! 
+
+An engaging platform where cat lovers can create, share, and enjoy meme cat reels. With interactive features, AI-powered captions, and a ranking system, MemeCats brings the purr-fect blend of fun and creativity for cat enthusiasts! 🐱
+
+💻 Tech Stack:
+-> Frontend: React Native (Expo)
+-> Backend: Node.js, Express.js
+-> Database: MongoDB, Cloudinary
+
+✨ Features:
+-> Cute meme cat-themed UI/UX.
+-> Login/Signup with password encryption.
+-> Scroll and refresh meme cat reels.
+-> Interactive options: Like, comment, save, mic on/off, pause/play.
+-> Create and upload your own cat reels.
+-> AI-powered caption generation for reels.
+-> Edit profile and check your saved reels.
+-> Ranking screen showcasing top-performing cats.
+
+🐈 Scroll, laugh, and share your cat moments with the world of MemeCats!`,
+  },
+
   // Web Development
   {
     title: "CodeBro",
     category: "Web Development",
+    download: null,
     images: [
       images.codebro1,
       images.codebro2,
@@ -51,6 +92,7 @@ This Coding Problem-Solving Platform is a full-stack website where users can pra
   {
     title: "SpaceX - Animated",
     category: "Web Development",
+    download: null,
     images: [
       images.spacex1,
       images.spacex2,
@@ -68,6 +110,7 @@ This Coding Problem-Solving Platform is a full-stack website where users can pra
   {
     title: "Nitai Innovations - Startup Company Official Website",
     category: "Web Development",
+    download: null,
     images: [
       images.nitai1,
       images.nitai2,
@@ -92,6 +135,7 @@ This Coding Problem-Solving Platform is a full-stack website where users can pra
   {
     title: "Simon's Cat",
     category: "Web Development",
+    download: null,
     images: [images.meaw1, images.meaw2, images.meaw3, images.meaw4],
     live: "https://simonscatwebsite.netlify.app/",
     repo: "https://github.com/Ganesh-Mk/simonscat",
@@ -106,6 +150,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "Animal Tracking System",
     category: "Web Development",
+    download: null,
     images: [images.animal1, images.animal2, images.animal3],
     live: null,
     repo: "https://github.com/Ganesh-Mk/AnimalTracker",
@@ -138,6 +183,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "Group chat app",
     category: "Web Development",
+    download: null,
     images: [
       images.chatapp4,
       images.chatapp1,
@@ -153,6 +199,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "Pokemon Game",
     category: "Web Development",
+    download: null,
     images: [
       images.pokemon1,
       images.pokemon2,
@@ -172,6 +219,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "My Old Portfolio & Mini Projects",
     category: "Web Development",
+    download: null,
     images: [
       images.oldPortfolio1,
       images.oldPortfolio2,
@@ -185,12 +233,11 @@ A responsive cat-themed website built using React.js, inspired by the official S
     desc: `I created these website around 2 years ago, showcasing my skills and mini projects from that time. It served as a portfolio to demonstrate my early web development experience.`,
   },
 
-  // App Development
-
   // Console Applications
   {
     title: "Hang Man Game - Java",
     category: "Console Applications",
+    download: null,
     images: [images.hangmangame1, images.hangmangame2, images.hangmangame3],
     alt: "Project image",
     live: null,
@@ -202,6 +249,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "Guess Game - C",
     category: "Console Applications",
+    download: null,
     images: [images.guessGame1, images.guessGame2, images.guessGame3],
     alt: "Project image",
     live: null,
@@ -213,6 +261,7 @@ A responsive cat-themed website built using React.js, inspired by the official S
   {
     title: "Tic-Tac-Toe - Python",
     category: "Console Applications",
+    download: null,
     images: [images.tictactoe1, images.tictactoe2],
     alt: "Project image",
     live: null,
