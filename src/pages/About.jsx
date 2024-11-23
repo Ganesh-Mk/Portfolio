@@ -26,8 +26,8 @@ function About() {
 
         <p>
           I've interned in collaborative environments, utilizing GitHub for
-          version control and delivering high-quality, production-level code. My
-          aim is to bring your projects to life with modern solutions and best
+          version control and delivering high-quality and efficient code. My aim
+          is to bring your projects to life with modern solutions and best
           practices. Let's create something amazing together!
         </p>
       </section>

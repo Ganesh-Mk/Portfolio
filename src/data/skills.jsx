@@ -94,11 +94,11 @@ export const programmingLangSkillsData = [
     image: `${images.c}`,
     alt: "C",
   },
-  {
-    name: "R",
-    image: `${images.r}`,
-    alt: "R",
-  },
+  // {
+  //   name: "R",
+  //   image: `${images.r}`,
+  //   alt: "R",
+  // },
   {
     name: "C#",
     image: `${images.csharp}`,

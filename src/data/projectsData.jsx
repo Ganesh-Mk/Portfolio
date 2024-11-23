@@ -246,18 +246,18 @@ A responsive cat-themed website built using React.js, inspired by the official S
     repo: null,
     desc: `While learning Java, I built this game. The game dynamically selects words of varying lengths for the player to guess, offering an engaging challenge. Players attempt to guess the word letter by letter, with each incorrect guess bringing them closer to "hanging" the character`,
   },
-  {
-    title: "Guess Game - C",
-    category: "Console Applications",
-    download: null,
-    images: [images.guessGame1, images.guessGame2, images.guessGame3],
-    alt: "Project image",
-    live: null,
-    video:
-      "https://drive.google.com/file/d/1i_Ny5FOvdI2jPe84RxatRcKpvhB2oZOo/view?usp=sharing",
-    repo: null,
-    desc: "This is a simple number guessing game during my first semester while learning C. The player guesses a random number, and the game gives hints if it's higher or lower. It also stores the highest score using a file system",
-  },
+  // {
+  //   title: "Guess Game - C",
+  //   category: "Console Applications",
+  //   download: null,
+  //   images: [images.guessGame1, images.guessGame2, images.guessGame3],
+  //   alt: "Project image",
+  //   live: null,
+  //   video:
+  //     "https://drive.google.com/file/d/1i_Ny5FOvdI2jPe84RxatRcKpvhB2oZOo/view?usp=sharing",
+  //   repo: null,
+  //   desc: "This is a simple number guessing game during my first semester while learning C. The player guesses a random number, and the game gives hints if it's higher or lower. It also stores the highest score using a file system",
+  // },
   {
     title: "Tic-Tac-Toe - Python",
     category: "Console Applications",

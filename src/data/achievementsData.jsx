@@ -8,6 +8,17 @@ export const achievementData = [
     images: [images.bgmBestDev, images.bgmBestDevAward, images.bgmBestDevCerti],
   },
   {
+    title: "Victory at National Level Web Dev Competition",
+    date: "14 to 16 Dec, 2023",
+    desc: `At National Level Event Techno-Cultural Fest Savishkar Hosted by Jain College of Engineering and Research, Belgaum, Earning a prize of Rs.1500/-`,
+    images: [
+      images.savishkarWon,
+      images.savishkarTeam,
+      images.savishkarAward,
+      images.savishkarCerti,
+    ],
+  },
+  {
     title: "Victory in the web design competition",
     date: "July 27, 2024",
     desc: `At the inter-KLE events, hosted by KLE BCA Mahalingpur!
@@ -36,27 +47,6 @@ export const achievementData = [
     desc: `At the "Vencer" event held at AITM - Angadi Institute of Technology and Management College in Belgaum! We received a ₹500 cash prize, certificates, and an award. `,
     images: [images.vencerWon, images.vencer1stCerti],
   },
-  {
-    title: "Victory at National Level Web Dev Competition",
-    date: "14 to 16 Dec, 2023",
-    desc: `At National Level Event Techno-Cultural Fest Savishkar Hosted by Jain College of Engineering and Research, Belgaum, Earning a prize of Rs.1500/-`,
-    images: [
-      images.savishkarWon,
-      images.savishkarTeam,
-      images.savishkarAward,
-      images.savishkarCerti,
-    ],
-  },
-  {
-    title: "Runner up National Level Coding Competition",
-    date: "29 Feb and 1 March, 2024",
-    desc: `Hosted by KLE CET College, Chikodi! Grateful for the recognition and the 2000₹ cash prize. Thanks to my friend for his valuable contributions!`,
-    images: [
-      images.chikodi2ndDuo,
-      images.chikodi2ndGroup,
-      images.praxis2ndCert,
-    ],
-  },
 
   {
     title: "3rd Prize in National Level Hackathon",
@@ -67,6 +57,16 @@ export const achievementData = [
       images.techVentureGroupPhoto1,
       images.techventureAward,
       images.techventure3rdCerti,
+    ],
+  },
+  {
+    title: "Runner up in National Level Coding Competition",
+    date: "29 Feb and 1 March, 2024",
+    desc: `Hosted by KLE CET College, Chikodi! Grateful for the recognition and the 2000₹ cash prize. Thanks to my friend for his valuable contributions!`,
+    images: [
+      images.chikodi2ndDuo,
+      images.chikodi2ndGroup,
+      images.praxis2ndCert,
     ],
   },
   {
@@ -99,22 +99,22 @@ export const achievementData = [
       images.nipani2ndCerti,
     ],
   },
-  {
-    title: "Academic Ranking",
-    date: "2023 - 25",
-    desc: `Secured 1st place in the 1st and 2nd semesters, and 3rd place in the 3rd semester. Awaiting results for the upcoming semesters.`,
-    images: [
-      images.firstSemRankPoster,
-      images.secondSemRankPoster,
-      images.thirdSemRankPoster,
-    ],
-  },
-  {
-    title: "Leetcode Profile",
-    date: "Jan - present, 2024",
-    desc: `Reached 300+ LeetCode problems! Although I've lost some consistency in daily problem-solving due to focusing on development, but it's all part of the learning journey. Still more to go 💫`,
-    images: [images.leetcode1, images.leetcode2],
-  },
+  // {
+  //   title: "Academic Ranking",
+  //   date: "2023 - 25",
+  //   desc: `Secured 1st place in the 1st and 2nd semesters, and 3rd place in the 3rd semester. Awaiting results for the upcoming semesters.`,
+  //   images: [
+  //     images.firstSemRankPoster,
+  //     images.secondSemRankPoster,
+  //     images.thirdSemRankPoster,
+  //   ],
+  // },
+  // {
+  //   title: "Leetcode Profile",
+  //   date: "Jan - present, 2024",
+  //   desc: `Reached 300+ LeetCode problems! Although I've lost some consistency in daily problem-solving due to focusing on development, but it's all part of the learning journey. Still more to go 💫`,
+  //   images: [images.leetcode1, images.leetcode2],
+  // },
 
   {
     title: "UiPath Student Developer Champion",
@@ -122,17 +122,17 @@ export const achievementData = [
     desc: `Selected as a UiPath Student Developer Champion after clearing multiple interview rounds. Responsible for organizing sessions to guide juniors in exploring UiPath, its courses, and learning about AI and automation. Along with my team, We led various sessions and successfully organized the Hack-a-Bot competition, sponsored by the UiPath community`,
     images: [images.uipath1, images.uipath2, images.uipath3, images.uipath4],
   },
-  {
-    title: "Other Achievements ",
-    date: "2020 - 25",
-    desc: `Secured top ranks in various class activity, inHouse event. including 1st place in coding (twice), 1st in PPT presentation, 2nd in drawing, 1st in logo design, and 1st in gaming, multiple drawing awards in school, Also honored with 'Best Boy'`,
-    images: [
-      images.otherAwards,
-      images.classActivity1stCodingAward,
-      images.classActivity2ndLogoAward,
-      images.specialAchieve2ndSem,
-      images.specialAchievement4thAward,
-      images.thirdSemTopper,
-    ],
-  },
+  // {
+  //   title: "Other Achievements ",
+  //   date: "2020 - 25",
+  //   desc: `Secured top ranks in various class activity, inHouse event. including 1st place in coding (twice), 1st in PPT presentation, 2nd in drawing, 1st in logo design, and 1st in gaming, multiple drawing awards in school, Also honored with 'Best Boy'`,
+  //   images: [
+  //     images.otherAwards,
+  //     images.classActivity1stCodingAward,
+  //     images.classActivity2ndLogoAward,
+  //     images.specialAchieve2ndSem,
+  //     images.specialAchievement4thAward,
+  //     images.thirdSemTopper,
+  //   ],
+  // },
 ];
