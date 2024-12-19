@@ -188,7 +188,33 @@ import memecats3 from "./assets/projects/memecats3.jpg";
 import memecats4 from "./assets/projects/memecats4.jpg";
 import memecats5 from "./assets/projects/memecats5.jpg";
 
+import gogte0 from "./assets/achievements/gogte0.jpg";
+import gogte1 from "./assets/achievements/gogte1.jpg";
+import gogte2 from "./assets/achievements/gogte2.jpg";
+import gogte3 from "./assets/achievements/gogte3.jpg";
+import gogte4 from "./assets/achievements/gogte4.jpg";
+import gogte5 from "./assets/achievements/gogte5.jpg";
+
+import hubli24Hour1 from "./assets/achievements/hubli24Hour1.jpg";
+import hubli24Hour2 from "./assets/achievements/hubli24Hour2.jpg";
+import hubli24Hour3 from "./assets/achievements/hubli24Hour3.jpg";
+import hubli24Hour4 from "./assets/achievements/hubli24Hour4.jpg";
+import hubli24Hour5 from "./assets/achievements/hubli24Hour5.jpg";
+import hubli24Hour6 from "./assets/achievements/hubli24Hour6.jpg";
+
 export const images = {
+  hubli24Hour1,
+  hubli24Hour2,
+  hubli24Hour3,
+  hubli24Hour4,
+  hubli24Hour5,
+  hubli24Hour6,
+  gogte0,
+  gogte1,
+  gogte2,
+  gogte3,
+  gogte4,
+  gogte5,
   memecats0,
   memecats1,
   memecats2,

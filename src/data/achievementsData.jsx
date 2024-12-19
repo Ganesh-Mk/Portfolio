@@ -7,6 +7,28 @@ export const achievementData = [
     desc: "Solo Hackathon - DEV FEST organized by Google Developer Groups. Ranked 1st out of 170+ participants.",
     images: [images.bgmBestDev, images.bgmBestDevAward, images.bgmBestDevCerti],
   },
+
+  {
+    title: "Won 24-hour Hackathon (HackOverflow 2.0)",
+    date: "28 to 29 Nov, 2024",
+    desc: `Won the 24-hour National Level Hackathon with a ₹7000 Cash Prize hosted by KLE Institute of Technology, HUBLI, In hackathon, we developed a full-stack Al-integrated platform designed to streamline and automate the interview process.
+   .`,
+    images: [
+      images.hubli24Hour1,
+      images.hubli24Hour2,
+      images.hubli24Hour3,
+      images.hubli24Hour4,
+      images.hubli24Hour5,
+      images.hubli24Hour6,
+    ],
+  },
+  {
+    title: "Won National Level Coding Event in Hubli",
+    date: "29 Nov, 2024",
+    desc: `Won the National Level Coding Compeition with a ₹5000 Cash Prize hosted by KLE Institute of Technology, HUBLI.`,
+    images: [images.hubli24Hour4, images.hubli24Hour5, images.hubli24Hour6],
+  },
+
   {
     title: "Victory at National Level Web Dev Competition",
     date: "14 to 16 Dec, 2023",
@@ -41,11 +63,26 @@ export const achievementData = [
       images.nipani1stCerti,
     ],
   },
+
   {
     title: "Won Web Development Competition ",
     date: "31 May and 1 June, 2024",
     desc: `At the "Vencer" event held at AITM - Angadi Institute of Technology and Management College in Belgaum! We received a ₹500 cash prize, certificates, and an award. `,
     images: [images.vencerWon, images.vencer1stCerti],
+  },
+  {
+    title: "Winner of 24-hour Hackathon (ClashOfCodes)",
+    date: "13 to 14 Dec, 2024",
+    desc: ` Won the ClashOfCodes 24-hour Hackathon with a ₹25,000 Cash Prize, organized by IEEE at KLS Gogte Institute of Technology, Belagavi, Karnataka, India on 14th-15th December 2024!
+   .`,
+    images: [
+      images.gogte0,
+      images.gogte1,
+      images.gogte3,
+      images.gogte2,
+      images.gogte4,
+      images.gogte5,
+    ],
   },
 
   {
