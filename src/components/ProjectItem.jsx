@@ -276,6 +276,20 @@ function ProjectItem({ index, project }) {
               gap: "1rem",
             }}
           >
+            {project.download !== null && (
+              <a
+                href={project.download}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="skill service-item" style={buttonContainer}>
+                  <Download className="project-btns" />
+                  <div className="skillName">
+                    <p style={buttonTextStyle}>Download</p>
+                  </div>
+                </div>
+              </a>
+            )}
             {project.live !== null && (
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>

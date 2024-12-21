@@ -1,11 +1,12 @@
 export const experienceData = [
   {
     id: 1,
-    title: "Full Stack Developer Intern at “NITAI INNOVATIONS” - Startup",
+    title: "Full Stack Developer Intern at NITAI INNOVATIONS - Startup Company",
     period: "July 2024 - Present",
     workMode: "Hybrid",
     location: "Dharwad, Karnataka",
-    description:
-      "Implemented and contributed to 4+ MERN stack projects, focusing on code optimization, visualization, and production-level coding, while collaborating through Git and GitHub.",
+    description: `Working on full-stack projects to enhance business flexibility and scalability. Focused on coding best practices, technical
+      documentation, code optimization, reusable components, meeting business requirements, and collaborating effectively
+      through Git and GitHub.`,
   },
 ];

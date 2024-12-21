@@ -202,7 +202,20 @@ import hubli24Hour4 from "./assets/achievements/hubli24Hour4.jpg";
 import hubli24Hour5 from "./assets/achievements/hubli24Hour5.jpg";
 import hubli24Hour6 from "./assets/achievements/hubli24Hour6.jpg";
 
+import smartRecruit1 from "./assets/projects/smartRecruit1.png";
+import smartRecruit2 from "./assets/projects/smartRecruit2.png";
+import smartRecruit3 from "./assets/projects/smartRecruit3.png";
+import smartRecruit4 from "./assets/projects/smartRecruit4.png";
+import smartRecruit5 from "./assets/projects/smartRecruit5.png";
+import smartRecruit6 from "./assets/projects/smartRecruit6.png";
+
 export const images = {
+  smartRecruit1,
+  smartRecruit2,
+  smartRecruit3,
+  smartRecruit4,
+  smartRecruit5,
+  smartRecruit6,
   hubli24Hour1,
   hubli24Hour2,
   hubli24Hour3,

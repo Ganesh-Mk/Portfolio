@@ -33,7 +33,7 @@ function About() {
       </section>
 
       <a
-        href="https://drive.google.com/file/d/1cjtEsamgkqW-lJ76crkDNU9JO6wwdbmy/view"
+        href="https://drive.google.com/file/d/1AUiNAJKzbajmcJZfzoSkAItDaDuY1ncn/view"
         target="_blank"
       >
         <Button
@@ -67,10 +67,10 @@ function About() {
       </section>
 
       {/* Education */}
-      <TimeLine title="Education" educationData={educationData} />
+      <TimeLine title="Education" data={educationData} />
 
       {/* Experience */}
-      <TimeLine title="Experience" educationData={experienceData} />
+      <TimeLine title="Experience" data={experienceData} />
     </article>
   );
 }

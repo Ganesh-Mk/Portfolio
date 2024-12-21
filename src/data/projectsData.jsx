@@ -49,6 +49,31 @@ An engaging platform where cat lovers can create, share, and enjoy meme cat reel
 
   // Web Development
   {
+    title: "Smart Recruit",
+    category: "Web Development",
+    download: null,
+    images: [
+      images.smartRecruit1,
+      images.smartRecruit2,
+      images.smartRecruit3,
+      images.smartRecruit4,
+      images.smartRecruit5,
+      images.smartRecruit6,
+    ],
+    live: "https://smartrecruit.vercel.app/",
+    repo: "https://github.com/Ganesh-Mk/SmartRecruit",
+    video: "https://www.youtube.com/watch?v=YWyGYaexbNk",
+    alt: "Project image",
+    desc: `Smart Recruit is an innovative open-source project designed to transform the recruitment process through cutting-edge automation and intelligent technologies.
+    
+• Innovative hiring platform built with the MERN stack, winning two 24-hour hackathons for its creative approach
+• Features three recruitment rounds: Aptitude, Technical, and HR, with options for using existing questions, manual input, or AI-generated aptitude and technical questions based on user prompts.
+• Includes automatic candidate data extraction from Excel, real-time candidates dashboard updates, and seamless email communication throughout the recruitment process.
+• Implemented bi-directional live code editing and real-time face detection to ensure secure assessments by capturing proof images of unauthorized participants. Optimized platform for numerical and reasoning challenges.
+
+    `,
+  },
+  {
     title: "CodeBro",
     category: "Web Development",
     download: null,
