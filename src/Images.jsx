@@ -209,7 +209,14 @@ import smartRecruit4 from "./assets/projects/smartRecruit4.png";
 import smartRecruit5 from "./assets/projects/smartRecruit5.png";
 import smartRecruit6 from "./assets/projects/smartRecruit6.png";
 
+import hubliCodingCertificate from "./assets/achievements/hubliCodingCertificate.jpg";
+import clashofcodesCertificate from "./assets/achievements/clashofcodesCertificate.jpg";
+import hackoverflowCertificate from "./assets/achievements/hackoverflowCertificate.jpg";
+
 export const images = {
+  hubliCodingCertificate,
+  clashofcodesCertificate,
+  hackoverflowCertificate,
   smartRecruit1,
   smartRecruit2,
   smartRecruit3,

@@ -20,13 +20,14 @@ export const achievementData = [
       images.hubli24Hour4,
       images.hubli24Hour5,
       images.hubli24Hour6,
+      images.hackoverflowCertificate,
     ],
   },
   {
     title: "Won National Level Coding Event in Hubli",
     date: "29 Nov, 2024",
     desc: `Won the National Level Coding Compeition with a ₹5000 Cash Prize hosted by KLE Institute of Technology, HUBLI.`,
-    images: [images.hubli24Hour4, images.hubli24Hour5, images.hubli24Hour6],
+    images: [images.hubli24Hour5, images.hubliCodingCertificate],
   },
 
   {
@@ -82,6 +83,7 @@ export const achievementData = [
       images.gogte2,
       images.gogte4,
       images.gogte5,
+      images.clashofcodesCertificate,
     ],
   },
 
