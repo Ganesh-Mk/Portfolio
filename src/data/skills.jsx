@@ -79,6 +79,7 @@ export const programmingLangSkillsData = [
     image: `${images.js}`,
     alt: "Javascript",
   },
+
   {
     name: "Python",
     image: `${images.python}`,
@@ -88,6 +89,11 @@ export const programmingLangSkillsData = [
     name: "Java",
     image: `${images.java}`,
     alt: "Java",
+  },
+  {
+    name: "TypeScript",
+    image: `${images.typescript}`,
+    alt: "TypeScript",
   },
   {
     name: "C",

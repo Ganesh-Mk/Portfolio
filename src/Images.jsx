@@ -213,7 +213,10 @@ import hubliCodingCertificate from "./assets/achievements/hubliCodingCertificate
 import clashofcodesCertificate from "./assets/achievements/clashofcodesCertificate.jpg";
 import hackoverflowCertificate from "./assets/achievements/hackoverflowCertificate.jpg";
 
+import typescript from "./assets/skillIcons/typescript.png";
+
 export const images = {
+  typescript,
   hubliCodingCertificate,
   clashofcodesCertificate,
   hackoverflowCertificate,

@@ -18,17 +18,7 @@ function About() {
 
       <section className="about-text">
         <p>
-          A dedicated developer with experience in both web and app development,
-          specializing in full-stack projects. I have a strong foundation in
-          problem-solving. I am currently pursuing my 5th semester of BCA at KLE
-          Society's College of BCA, Gokak.
-        </p>
-
-        <p>
-          I've interned in collaborative environments, utilizing GitHub for
-          version control and delivering high-quality and efficient code. My aim
-          is to bring your projects to life with modern solutions and best
-          practices. Let's create something amazing together!
+          Dedicated full-stack web developer currently freelancing, with hands-on experience in web and app development. I have completed an internship and worked on multiple full-stack projects, honing my problem-solving skills. As a final-year BCA student, I am eager to expand my knowledge and contribute to innovative solutions.
         </p>
       </section>
 
