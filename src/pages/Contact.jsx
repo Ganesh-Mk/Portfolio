@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import { Button, Snackbar, Alert, CircularProgress } from "@mui/material"; // Import Snackbar and Alert
 import emailjs from "emailjs-com";
@@ -14,6 +14,10 @@ function Contact() {
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const USER_ID = import.meta.env.VITE_USER_ID;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const [formData, setFormData] = useState({
     fullname: "",

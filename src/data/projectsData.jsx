@@ -19,7 +19,7 @@ export const projects = [
       images.memecats4,
       images.memecats5,
     ],
-    download: "https://expo.dev/artifacts/eas/oS5k1gsQEyaKUaFxft3Qxf.apk",
+    download: "https://expo.dev/accounts/ganeshmk/projects/frontend/builds/fd6b3e7f-c88f-48de-b142-cf224153bac0",
     live: null,
     repo: "https://github.com/Ganesh-Mk/MemeCats",
     video:

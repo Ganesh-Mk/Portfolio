@@ -1,12 +1,18 @@
 export const experienceData = [
   {
     id: 1,
-    title: "Full Stack Developer Intern at NITAI INNOVATIONS - Startup Company",
-    period: "July 2024 - Present",
+    title: "Freelancing as Full Stack Developer at EarningEdge",
+    period: "Jan 2025 - Present",
+    workMode: "Remote",
+    location: "Belgaum, Karnataka",
+    description: `Contributed valuable features, resolved critical bugs. Daily online meetings enhanced my communication skills and teamwork, ensuring effective collaboration on various full-stack projects as a freelancer.`,
+  },
+  {
+    id: 2,
+    title: "Full Stack Developer Intern at NITAI INNOVATIONS",
+    period: "July 2024 - Jan 2025",
     workMode: "Hybrid",
     location: "Dharwad, Karnataka",
-    description: `Working on full-stack projects to enhance business flexibility and scalability. Focused on coding best practices, technical
-      documentation, code optimization, reusable components, meeting business requirements, and collaborating effectively
-      through Git and GitHub.`,
+    description: `Worked on full-stack projects to enhance business flexibility and scalability. Focused on coding best practices, technical documentation, code optimization, and collaborating effectively through Git and GitHub.`,
   },
 ];
