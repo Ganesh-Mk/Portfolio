@@ -213,9 +213,31 @@ import hubliCodingCertificate from "./assets/achievements/hubliCodingCertificate
 import clashofcodesCertificate from "./assets/achievements/clashofcodesCertificate.jpg";
 import hackoverflowCertificate from "./assets/achievements/hackoverflowCertificate.jpg";
 
+import pune1 from "./assets/achievements/pune1.jpg";
+import pune2 from "./assets/achievements/pune2.jpg";
+import pune3 from "./assets/achievements/pune3.jpg";
+
+import freelance1 from "./assets/projects/freelance1.png";
+import freelance2 from "./assets/projects/freelance2.png";
+import freelance3 from "./assets/projects/freelance3.png";
+import freelance4 from "./assets/projects/freelance4.png";
+import freelance5 from "./assets/projects/freelance5.png";
+import freelance6 from "./assets/projects/freelance6.png";
+import freelance7 from "./assets/projects/freelance7.png";
+
 import typescript from "./assets/skillIcons/typescript.png";
 
 export const images = {
+  freelance1,
+  freelance2,
+  freelance3,
+  freelance4,
+  freelance5,
+  freelance6,
+  freelance7,
+  pune1,
+  pune2,
+  pune3,
   typescript,
   hubliCodingCertificate,
   clashofcodesCertificate,

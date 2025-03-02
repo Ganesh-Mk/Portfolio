@@ -9,6 +9,17 @@ export const achievementData = [
   },
 
   {
+    title: "Won Student Innovation Award in the National Level Hackathon, Pune!",
+    date: "22 to 23 Feb, 2025",
+    desc: `in the National Level 24-hour Hackathon Techathon 2.0 hosted by AISSMS Institute of Information Technology, Pune! Competing against 320+ teams, including 80+ in our category, we secured the Best Solution award and a cash prize of ₹10,000!
+   .`,
+    images: [
+      images.pune1,
+      images.pune2,
+      images.pune3,
+    ],
+  },
+  {
     title: "Won 24-hour Hackathon (HackOverflow 2.0)",
     date: "28 to 29 Nov, 2024",
     desc: `Won the 24-hour National Level Hackathon with a ₹7000 Cash Prize hosted by KLE Institute of Technology, HUBLI, In hackathon, we developed a full-stack Al-integrated platform designed to streamline and automate the interview process.

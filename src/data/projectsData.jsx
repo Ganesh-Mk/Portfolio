@@ -49,6 +49,27 @@ An engaging platform where cat lovers can create, share, and enjoy meme cat reel
 
   // Web Development
   {
+    title: "Several Freelance Projects",
+    category: "Web Development",
+    download: null,
+    images: [
+      images.freelance4,
+      images.freelance1,
+      images.freelance2,
+      images.freelance3,
+      images.freelance5,
+      images.freelance6,
+      images.freelance7,
+    ],
+    live: "",
+    repo: "",
+    video: "",
+    alt: "Project image",
+    desc: `Worked on multiple client projects using various tech stacks, including MERN, Next.js, TypeScript, and React Native. Due to client confidentiality, detailed project showcases are not available. Instead, one representative image from each project is displayed.`,
+  },
+
+
+  {
     title: "Smart Recruit",
     category: "Web Development",
     download: null,
