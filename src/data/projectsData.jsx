@@ -49,7 +49,7 @@ An engaging platform where cat lovers can create, share, and enjoy meme cat reel
 
   // Web Development
   {
-    title: "Several Freelance Projects",
+    title: "Multiple Freelance Projects",
     category: "Web Development",
     download: null,
     images: [
