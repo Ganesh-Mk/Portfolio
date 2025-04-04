@@ -23,7 +23,7 @@ function About() {
       </section>
 
       <a
-        href="https://drive.google.com/file/d/1AUiNAJKzbajmcJZfzoSkAItDaDuY1ncn/view"
+        href="https://drive.google.com/file/d/1zmYdbERUly5ToXLCKxjRUrEaqzI0d5B9/view"
         target="_blank"
       >
         <Button
