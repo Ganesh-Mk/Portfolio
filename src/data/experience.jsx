@@ -1,8 +1,16 @@
 export const experienceData = [
     {
     id: 1,
+    title: "Software Development Engineer (SDE-1) at Marqait AI",
+    period: "Jan 2026 - Present",
+    workMode: "Remote",
+    location: "Hubli, Karnataka",
+    description: `Designing and building AI agents, integrating them into core Marqait products, and contributing to multiple Marqait Digital projects.`,
+  }, 
+  {
+    id: 5,
     title: "Software Developer Intern at Wundrsight health",
-    period: "Sep 2025 - Present",
+    period: "Sep 2025 - Dec 2025",
     workMode: "Onsite",
     location: "Bengaluru, Karnataka",
     description: `Working as a Software Developer Intern, contributing to the development and maintenance of web and app. Collaborating with cross-functional teams to deliver high-quality software solutions in a fast-paced environment.`,

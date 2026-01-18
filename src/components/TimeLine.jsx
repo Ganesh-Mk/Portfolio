@@ -39,7 +39,7 @@ function TimeLine({ title, data }) {
                 }}
               >
                 <div className="blog-meta">
-                  <p className="blog-category">Location: </p>
+                  <p className="blog-category">Location </p>
                   <span className="dot"></span>
                   <span dateTime="2022-02-23">{item.workMode}</span>
                   <span className="dot"></span>

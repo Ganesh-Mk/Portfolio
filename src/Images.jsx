@@ -254,11 +254,15 @@ import  parousia from "./assets/achievements/parousia.jpeg";
 import   evogen from "./assets/achievements/evogen.jpeg";
 import   chetech from "./assets/achievements/chetech.jpeg";
 import   best_outgoing from "./assets/achievements/best_outgoing.jpeg";
+import   blogkit from "./assets/projects/blogkit.jpeg";
+import   rainbox from "./assets/projects/rainbox.jpeg";
+import   thrumble from "./assets/projects/thrumble.png";
 
 
 
 
 export const images = {
+  rainbox, blogkit,thrumble,
   figma, postman,  mockoon, cursor,eraser, notion,gogte24hour1,gogte24hour2,technova,parousia, evogen ,chetech,best_outgoing,
   aws_ec2,
   aws_s3,

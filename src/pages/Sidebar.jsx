@@ -34,7 +34,7 @@ function Sidebar() {
             Ganesh Koparde
           </h1>
 
-          <p className="title">Software Developer</p>
+          <p className="title">Software Engineer</p>
         </div>
 
         <button

@@ -18,7 +18,7 @@ function About() {
 
       <section className="about-text">
         <p>
-          Hi, I&apos;m a Software Developer currently doing an internship at Wundrsight Health, with hands-on experience in web and app development. I have worked on multiple full-stack client projects, honing my problem-solving skills. As a BCA graduate, I’m eager to expand my knowledge and contribute to innovative solutions.
+          Hi, I&apos;m a Software Engineer at Marqait AI, focused on designing clean system architectures and rapidly building scalable, real-world products.
         </p>
       </section>
 
