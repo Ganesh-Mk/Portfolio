@@ -18,12 +18,17 @@ function About() {
 
       <section className="about-text">
         <p>
-          Hi, I&apos;m a Software Engineer at Marqait AI, focused on designing clean system architectures and rapidly building scalable, real-world products.
+          Software Development Engineer with 1 year of experience shipping
+          production full-stack AI products — autonomous agents, voice AI, and
+          multi-tenant SaaS platforms. Multiple-time hackathon winner and
+          student mentor with hands-on experience in system design,
+          client-facing delivery, and taking products from idea to production
+          rapidly.
         </p>
       </section>
 
       <a
-        href="https://drive.google.com/file/d/1MXylC06rZJjuK_gzITxxKbTHHvWLzAbU/view"
+        href="https://drive.google.com/file/d/1t0Pfrh1mbTuymx7k-oMwYujoLI12D31u/view?usp=sharing"
         target="_blank"
       >
         <Button

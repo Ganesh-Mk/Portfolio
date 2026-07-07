@@ -27,6 +27,7 @@ import nodejs from "./assets/skillIcons/nodejs.png";
 import expressjs from "./assets/skillIcons/expressjs.png";
 import mongodb from "./assets/skillIcons/mongodb.png";
 import sql from "./assets/skillIcons/sql.png";
+import restapi from "./assets/skillIcons/restapi.png";
 import gsap from "./assets/skillIcons/gsap.png";
 import materialUi from "./assets/skillIcons/materialUi.png";
 import socketio from "./assets/skillIcons/socketio.png";
@@ -35,6 +36,38 @@ import c from "./assets/skillIcons/c.png";
 import r from "./assets/skillIcons/r.png";
 import csharp from "./assets/skillIcons/csharp.png";
 import java from "./assets/skillIcons/java.png";
+import zustand from "./assets/skillIcons/zustand.png";
+import graphql from "./assets/skillIcons/GraphQL_Logo.svg.webp";
+import kafka from "./assets/skillIcons/kaafka.png";
+import firebase from "./assets/skillIcons/firebase.png";
+import cloudflare from "./assets/skillIcons/cloudflare-worker.png";
+import redis from "./assets/skillIcons/extension.png";
+import ai_agents from "./assets/skillIcons/claudecode.png";
+import rag from "./assets/skillIcons/extension.png";
+import llm from "./assets/skillIcons/extension.png";
+import prompt_engineering from "./assets/skillIcons/extension.png";
+import mcp from "./assets/skillIcons/claudecode.png";
+import crewai from "./assets/skillIcons/claudecode.png";
+import langchain from "./assets/skillIcons/extension.png";
+import n8n from "./assets/skillIcons/extension.png";
+import apple_pay from "./assets/skillIcons/apple_pay.png";
+import cicd from "./assets/skillIcons/CICDBlog.webp";
+import claude_code from "./assets/skillIcons/claudecode.png";
+import jest from "./assets/skillIcons/jest.png";
+import sanity from "./assets/skillIcons/sanity.png";
+import chrome_extensions from "./assets/skillIcons/extension.png";
+import gsc from "./assets/skillIcons/gsc.png";
+import ga4 from "./assets/skillIcons/ga4.png";
+import gtm from "./assets/skillIcons/gtm.png";
+import stripe from "./assets/skillIcons/stripe.webp";
+import razorpay from "./assets/skillIcons/razorpay.png";
+import vercel from "./assets/skillIcons/vercel.svg";
+import aws_cloudwatch from "./assets/skillIcons/cloudwatch.png";
+import aws_elb from "./assets/skillIcons/elb.png";
+import aws_sqs from "./assets/skillIcons/sqs.png";
+import golang from "./assets/skillIcons/golang.png";
+import postgresql from "./assets/skillIcons/sql.png";
+import dbos from "./assets/skillIcons/extension.png";
 import memecat from "./assets/images/memecat.jpg";
 
 import logo1 from "./assets/images/logo-1-color.png";
@@ -232,7 +265,6 @@ import supabase from "./assets/skillIcons/supabase.webp";
 import neon from "./assets/skillIcons/neon.png";
 import fastapi from "./assets/skillIcons/fastapi.webp";
 
-
 import aws_ec2 from "./assets/skillIcons/aws_ec2.png";
 import aws_s3 from "./assets/skillIcons/aws_s3.png";
 import aws_lambda from "./assets/skillIcons/aws_lambda.webp";
@@ -243,27 +275,38 @@ import aws_sagemaker from "./assets/skillIcons/aws_sagemaker.jpeg";
 import github_skill from "./assets/skillIcons/github_skill.png";
 import figma from "./assets/skillIcons/figma.png";
 import postman from "./assets/skillIcons/postman.webp";
-import  mockoon from "./assets/skillIcons/mockoon.png";
-import  cursor from "./assets/skillIcons/cursor.png";
-import  eraser from "./assets/skillIcons/eraser.png";
-import  notion from "./assets/skillIcons/notion.png";
-import  gogte24hour1 from "./assets/achievements/gogte24hour1.jpeg";
-import  gogte24hour2 from "./assets/achievements/gogte24hour2.jpeg";
-import  technova from "./assets/achievements/technova.jpeg";
-import  parousia from "./assets/achievements/parousia.jpeg";
-import   evogen from "./assets/achievements/evogen.jpeg";
-import   chetech from "./assets/achievements/chetech.jpeg";
-import   best_outgoing from "./assets/achievements/best_outgoing.jpeg";
-import   blogkit from "./assets/projects/blogkit.jpeg";
-import   rainbox from "./assets/projects/rainbox.jpeg";
-import   thrumble from "./assets/projects/thrumble.png";
-
-
-
+import mockoon from "./assets/skillIcons/mockoon.png";
+import cursor from "./assets/skillIcons/cursor.png";
+import eraser from "./assets/skillIcons/eraser.png";
+import notion from "./assets/skillIcons/notion.png";
+import gogte24hour1 from "./assets/achievements/gogte24hour1.jpeg";
+import gogte24hour2 from "./assets/achievements/gogte24hour2.jpeg";
+import technova from "./assets/achievements/technova.jpeg";
+import parousia from "./assets/achievements/parousia.jpeg";
+import evogen from "./assets/achievements/evogen.jpeg";
+import chetech from "./assets/achievements/chetech.jpeg";
+import best_outgoing from "./assets/achievements/best_outgoing.jpeg";
+import blogkit from "./assets/projects/blogkit.jpeg";
+import rainbox from "./assets/projects/rainbox.jpeg";
+import thrumble from "./assets/projects/thrumble.png";
 
 export const images = {
-  rainbox, blogkit,thrumble,
-  figma, postman,  mockoon, cursor,eraser, notion,gogte24hour1,gogte24hour2,technova,parousia, evogen ,chetech,best_outgoing,
+  rainbox,
+  blogkit,
+  thrumble,
+  figma,
+  postman,
+  mockoon,
+  cursor,
+  eraser,
+  notion,
+  gogte24hour1,
+  gogte24hour2,
+  technova,
+  parousia,
+  evogen,
+  chetech,
+  best_outgoing,
   aws_ec2,
   aws_s3,
   aws_lambda,
@@ -402,6 +445,7 @@ export const images = {
   expressjs,
   mongodb,
   sql,
+  restapi,
   gsap,
   materialUi,
   socketio,
@@ -410,6 +454,38 @@ export const images = {
   r,
   csharp,
   java,
+  zustand,
+  graphql,
+  kafka,
+  firebase,
+  cloudflare,
+  redis,
+  ai_agents,
+  rag,
+  llm,
+  prompt_engineering,
+  mcp,
+  crewai,
+  langchain,
+  n8n,
+  apple_pay,
+  cicd,
+  claude_code,
+  jest,
+  sanity,
+  chrome_extensions,
+  gsc,
+  ga4,
+  gtm,
+  stripe,
+  razorpay,
+  vercel,
+  aws_cloudwatch,
+  aws_elb,
+  aws_sqs,
+  golang,
+  postgresql,
+  dbos,
   memecat,
   codebro1,
   codebro2,
