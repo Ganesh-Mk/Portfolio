@@ -3,6 +3,7 @@ import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { projects, categories } from "../data/projectsData";
 
 import ProjectItem from "../components/ProjectItem";
+import CompanyProjects from "../components/CompanyProjects";
 import { images } from "../Images";
 import { Box } from "@mui/material";
 
@@ -31,6 +32,8 @@ function Projects() {
       <header>
         <h2 className="h2 article-title">Projects</h2>
       </header>
+
+      <CompanyProjects />
 
       <section className="projects">
         <ul className="filter-list">
