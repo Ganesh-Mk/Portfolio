@@ -1,106 +1,50 @@
 import { useEffect } from "react";
-import {
-  backendSkillsData,
-  devopsSkillsData,
-  frontendSkillsData,
-  programmingLangSkillsData,
-  toolsSkillsData,
-} from "../data/skills";
 import SkillsItems from "../components/SkillsItems";
+import { useSanityQuery } from "../lib/useSanityQuery";
+import { skillsQuery } from "../lib/queries";
+import Loader from "../components/Loader";
 
 function Skills() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const { data: skills } = useSanityQuery(skillsQuery);
+
+  // Group the flat skills list by category, preserving categoryOrder.
+  const groups = [];
+  const byCategory = new Map();
+  for (const skill of skills || []) {
+    if (!byCategory.has(skill.category)) {
+      const group = {
+        category: skill.category,
+        order: skill.categoryOrder ?? 999,
+        items: [],
+      };
+      byCategory.set(skill.category, group);
+      groups.push(group);
+    }
+    byCategory.get(skill.category).items.push(skill);
+  }
+  groups.sort((a, b) => a.order - b.order);
+
   return (
     <article className="skills active" data-page="skills">
       <header>
         <h2 className="h2 article-title">Skills</h2>
       </header>
 
-      {/* <section className="skill">
-        <h3 className="h3 skills-title">Overview Skills</h3>
-
-        <div
-          style={{
-            display: "grid",
-            justifyContent: "end",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-            justifyItems: "center",
-            padding: ".5rem 0rem",
-          }}
-        >
-          <p className="skillsOverviewText"></p>
-          <p className="skillsOverviewText">Basic</p>
-          <p className="skillsOverviewText">Good</p>
-          <p className="skillsOverviewText">Skilled</p>
-          <p className="skillsOverviewText">Master</p>
-        </div>
-        <ul className="skills-list content-card">
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Frontend Development</h5>
-            </div>
-
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "85%" }}
-              ></div>
-            </div>
-          </li>
-
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Backend Development</h5>
-            </div>
-
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "60%" }}
-              ></div>
-            </div>
-          </li>
-
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">
-                Core Subjects - OS, CN, DBMS, SDE, CyberSecurity
-              </h5>
-            </div>
-
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "40%" }}
-              ></div>
-            </div>
-          </li>
-
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Problem Solving / DSA</h5>
-            </div>
-
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-          </li>
-        </ul>
-      </section> */}
-
-      <SkillsItems title="Frontend" skillsData={frontendSkillsData} />
-      <SkillsItems title="Backend" skillsData={backendSkillsData} />
-      <SkillsItems title="Devops" skillsData={devopsSkillsData} />
-      <SkillsItems title="Tools" skillsData={toolsSkillsData} />
-      <SkillsItems
-        title="Programming Languages"
-        skillsData={programmingLangSkillsData}
-      />
+      {!skills ? (
+        <Loader />
+      ) : (
+        groups.map((group) => (
+          <SkillsItems
+            key={group.category}
+            title={group.category}
+            skillsData={group.items}
+          />
+        ))
+      )}
     </article>
   );
 }

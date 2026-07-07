@@ -85,7 +85,11 @@ function ProjectItem({ index, project }) {
               <VisibilityOutlined />
               <p style={{ fontSize: "0.6rem" }}>View More</p>
             </div>
-            <img src={project.images[0]} alt={project.alt} loading="lazy" />
+            <img
+              src={(project.images || [])[0]}
+              alt={project.alt}
+              loading="lazy"
+            />
           </figure>
 
           <h3
@@ -108,7 +112,7 @@ function ProjectItem({ index, project }) {
               gap: "1rem",
             }}
           >
-            {project.download !== null && (
+            {project.download && (
               <a
                 href={project.download}
                 target="_blank"
@@ -123,7 +127,7 @@ function ProjectItem({ index, project }) {
               </a>
             )}
 
-            {project.live !== null && (
+            {project.live && (
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <LaunchIcon className="project-btns" />
@@ -134,7 +138,7 @@ function ProjectItem({ index, project }) {
               </a>
             )}
 
-            {project.repo !== null && (
+            {project.repo && (
               <a href={project.repo} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <GitHubIcon className="project-btns" />
@@ -145,7 +149,7 @@ function ProjectItem({ index, project }) {
               </a>
             )}
 
-            {project.video !== null && (
+            {project.video && (
               <a href={project.video} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <VideoCameraBackRounded className="project-btns" />
@@ -238,7 +242,7 @@ function ProjectItem({ index, project }) {
           sx={{ padding: { xs: "1rem", lg: "2rem" } }}
         >
           <Slider {...settings}>
-            {project.images.map((image, index) => (
+            {(project.images || []).map((image, index) => (
               <div
                 key={index}
                 style={{
@@ -276,7 +280,7 @@ function ProjectItem({ index, project }) {
               gap: "1rem",
             }}
           >
-            {project.download !== null && (
+            {project.download && (
               <a
                 href={project.download}
                 target="_blank"
@@ -290,7 +294,7 @@ function ProjectItem({ index, project }) {
                 </div>
               </a>
             )}
-            {project.live !== null && (
+            {project.live && (
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <LaunchIcon className="project-btns" />
@@ -301,7 +305,7 @@ function ProjectItem({ index, project }) {
               </a>
             )}
 
-            {project.repo !== null && (
+            {project.repo && (
               <a href={project.repo} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <GitHubIcon className="project-btns" />
@@ -312,7 +316,7 @@ function ProjectItem({ index, project }) {
               </a>
             )}
 
-            {project.video !== null && (
+            {project.video && (
               <a href={project.video} target="_blank" rel="noopener noreferrer">
                 <div className="skill service-item" style={buttonContainer}>
                   <VideoCameraBackRounded className="project-btns" />

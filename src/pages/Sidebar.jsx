@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { images } from "../Images";
 import {
   KeyboardArrowDown,
   KeyboardArrowUp,
@@ -13,28 +12,43 @@ import {
   LinkedIn,
   WhatsApp,
 } from "@mui/icons-material";
+import { useSanityQuery } from "../lib/useSanityQuery";
+import { siteSettingsQuery } from "../lib/queries";
+
+const socialIcons = {
+  instagram: Instagram,
+  twitter: Twitter,
+  linkedin: LinkedIn,
+  github: GitHub,
+  whatsapp: WhatsApp,
+};
 
 function Sidebar() {
   const [openContent, setOpenContent] = useState(false);
+  const { data } = useSanityQuery(siteSettingsQuery);
+  const s = data || {};
+  const socials = s.socials || {};
 
   return (
     <aside className={openContent ? "sidebar active" : "sidebar"} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img
-            style={{ borderRadius: "1rem" }}
-            src={images.NewProfile}
-            alt="Richard hanrick"
-            width="80"
-          />
+          {s.avatar && (
+            <img
+              style={{ borderRadius: "1rem" }}
+              src={s.avatar}
+              alt={s.name || "Profile photo"}
+              width="80"
+            />
+          )}
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">
-            Ganesh Koparde
+          <h1 className="name" title={s.name}>
+            {s.name}
           </h1>
 
-          <p className="title">Software Engineer</p>
+          <p className="title">{s.role}</p>
         </div>
 
         <button
@@ -52,93 +66,78 @@ function Sidebar() {
         <div className="separator"></div>
 
         <ul className="contacts-list">
-          <li className="contact-item">
-            <div className="icon-box">
-              <MailOutline />
-            </div>
+          {s.email && (
+            <li className="contact-item">
+              <div className="icon-box">
+                <MailOutline />
+              </div>
 
-            <div className="contact-info">
-              <p className="contact-title">Email</p>
+              <div className="contact-info">
+                <p className="contact-title">Email</p>
 
-              <a href="mailto:ganeshmk247@gmail.com" className="contact-link">
-                ganeshmk247@gmail.com
-              </a>
-            </div>
-          </li>
+                <a href={`mailto:${s.email}`} className="contact-link">
+                  {s.email}
+                </a>
+              </div>
+            </li>
+          )}
 
-          <li className="contact-item">
-            <div className="icon-box">
-              <PhoneIphone />
-            </div>
+          {s.phone && (
+            <li className="contact-item">
+              <div className="icon-box">
+                <PhoneIphone />
+              </div>
 
-            <div className="contact-info">
-              <p className="contact-title">Phone</p>
+              <div className="contact-info">
+                <p className="contact-title">Phone</p>
 
-              <a href="tel:+91 9380795986" className="contact-link">
-                +91 9380795986
-              </a>
-            </div>
-          </li>
+                <a href={`tel:${s.phone}`} className="contact-link">
+                  {s.phone}
+                </a>
+              </div>
+            </li>
+          )}
 
-          <li className="contact-item">
-            <div className="icon-box">
-              <CalendarToday />
-            </div>
+          {s.birthday && (
+            <li className="contact-item">
+              <div className="icon-box">
+                <CalendarToday />
+              </div>
 
-            <div className="contact-info">
-              <p className="contact-title">Birthday</p>
+              <div className="contact-info">
+                <p className="contact-title">Birthday</p>
 
-              <time dateTime="1982-06-23">Dec 17, 2004</time>
-            </div>
-          </li>
+                <time>{s.birthday}</time>
+              </div>
+            </li>
+          )}
 
-          <li className="contact-item">
-            <div className="icon-box">
-              <LocationOnOutlined />
-            </div>
+          {s.location && (
+            <li className="contact-item">
+              <div className="icon-box">
+                <LocationOnOutlined />
+              </div>
 
-            <div className="contact-info">
-              <p className="contact-title">Location</p>
+              <div className="contact-info">
+                <p className="contact-title">Location</p>
 
-              <address>Hubli, Karnataka, India</address>
-            </div>
-          </li>
+                <address>{s.location}</address>
+              </div>
+            </li>
+          )}
         </ul>
 
         <div className="separator"></div>
         <ul className="social-list">
-          <li className="social-item">
-            <a
-              href="https://www.instagram.com/ganesh_mk_247/"
-              className="social-link"
-            >
-              <Instagram />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://x.com/Ganesh_Koparde_" className="social-link">
-              <Twitter />
-            </a>
-          </li>
-          <li className="social-item">
-            <a
-              href="https://www.linkedin.com/in/ganesh-koparde/"
-              className="social-link"
-            >
-              <LinkedIn />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://github.com/Ganesh-Mk" className="social-link">
-              <GitHub />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://wa.me/9380795986" className="social-link">
-              <WhatsApp />
-            </a>
-          </li>
+          {Object.entries(socialIcons).map(([key, Icon]) =>
+            socials[key] ? (
+              <li className="social-item" key={key}>
+                <a href={socials[key]} className="social-link" target="_blank" rel="noreferrer">
+                  <Icon />
+                </a>
+              </li>
+            ) : null
+          )}
         </ul>
       </div>
     </aside>
